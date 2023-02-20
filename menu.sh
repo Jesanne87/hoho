@@ -224,7 +224,7 @@ echo -e " ${NC}[\033[1;36m•11\033[0m] ${NC} \033[0;32m${bold}Netflix Checker  
 echo -e " ${NC}[\033[1;36m•12\033[0m] ${NC} \033[0;32m${bold}Limit Bandwith Speed${NC}[\033[1;36m•21\033[0m]  ${NC}\033[0;32m${bold}Backup"
 echo -e " ${NC}[\033[1;36m•13\033[0m] ${NC} \033[0;32m${bold}Change Domain       ${NC}[\033[1;36m•22\033[0m]  ${NC}\033[0;32m${bold}Restore"
 echo -e " ${NC}[\033[1;36m•14\033[0m] ${NC} \033[0;32m${bold}Renew Certi XRAY    ${NC}[\033[1;36m•23\033[0m]  ${NC}\033[0;32m${bold}Reboot"
-echo -e " ${NC}[\033[1;36m•15\033[0m] ${NC} \033[0;32m${bold}Check VPN Status    ${NC}[\033[1;36m•25\033[0m]  ${NC}\033[0;32m${bold}Theme Menu
+echo -e " ${NC}[\033[1;36m•15\033[0m] ${NC} \033[0;32m${bold}Check VPN Status    ${NC}[\033[1;36m•25\033[0m]  ${NC}\033[0;32m${bold}Menu Theme"
 if [[ $serverV > $myver ]]; then
 echo -e " ${NC}[\033[1;36m•24\033[0m]  ${bold}Update Autoscript To $serverV\n"
 up2u="updatews"
