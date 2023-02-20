@@ -18,7 +18,7 @@ date=$(date +"%Y-%m-%d")
 itoken=$(curl -sS https://raw.githubusercontent.com/SSHSEDANG4/update/main/asu)
 
 MYIP=$(curl -sS ipv4.icanhazip.com)
-NameUser=$(curl -sS https://raw.githubusercontent.com/annelyah23/permission/main/ipmini | grep $MYIP | awk '{print $2}')
+NameUser=$(curl -sS https://raw.githubusercontent.com/annelyah23/IP/main/access | grep $MYIP | awk '{print $2}')
 
 clear
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
