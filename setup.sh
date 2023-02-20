@@ -19,7 +19,7 @@ green='\e[0;32m'
 purple='\e[0;35m'
 orange='\e[0;33m'
 NC='\e[0m'
-export Server_URL="raw.githubusercontent.com/annelyah23/xyz/main"
+export Server_URL="raw.githubusercontent.com/Jesanne87/hoho/main"
 dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 #########################
@@ -224,7 +224,7 @@ sleep 2
 clear
 
 #rm -rf /usr/share/nginx/html/index.html
-#wget -q -O /usr/share/nginx/html/index.html "https://raw.githubusercontent.com/annelyah23/xyz/main/index.html"
+#wget -q -O /usr/share/nginx/html/index.html "https://raw.githubusercontent.com/Jesanne87/hoho/main/index.html"
 
 # Finish
 rm -f /root/ins-xray.sh
