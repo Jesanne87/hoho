@@ -213,7 +213,7 @@ echo -e "$COLOR1 ${NC} ${COLBG1}                     ${WH}${bold}XRAY MENU      
 echo -e "$COLOR1╚======================================================╝\033[0m"
 echo -e " ${NC}[\033[1;36m${bold}•1\033[0m]  \033[0;32m${bold}Vmess WS Panel    ${NC}[\033[1;36m${bold}•4\033[0m]  \033[0;32m${bold}Trojan TCP XTLS Panel"
 echo -e " ${NC}[\033[1;36m${bold}•2\033[0m]  \033[0;32m${bold}Vless WS Panel    ${NC}[\033[1;36m${bold}•5\033[0m]  \033[0;32m${bold}Trojan TCP Panel"     
-echo -e " ${NC}[\033[1;36m${bold}•3\033[0m]  \033[0;32m${bold}Trojan WS Panel   ${NC}${WH}[${COLOR1}25${WH}]${NC} ${COLOR1}• ${WH}THEME    ${WH}[${COLOR1}Menu${WH}]  $COLOR1 $NC"
+echo -e " ${NC}[\033[1;36m${bold}•3\033[0m]  \033[0;32m${bold}Trojan WS Panel"
 echo -e "$COLOR1╔======================================================╗\033[0m"
 echo -e "$COLOR1 ${COLBG1}                     ${WH}${bold}OTHERS MENU                 ${NC}$COLOR1${NC}"
 echo -e "$COLOR1╚======================================================╝\033[0m"
@@ -224,7 +224,7 @@ echo -e " ${NC}[\033[1;36m•11\033[0m] ${NC} \033[0;32m${bold}Netflix Checker  
 echo -e " ${NC}[\033[1;36m•12\033[0m] ${NC} \033[0;32m${bold}Limit Bandwith Speed${NC}[\033[1;36m•21\033[0m]  ${NC}\033[0;32m${bold}Backup"
 echo -e " ${NC}[\033[1;36m•13\033[0m] ${NC} \033[0;32m${bold}Change Domain       ${NC}[\033[1;36m•22\033[0m]  ${NC}\033[0;32m${bold}Restore"
 echo -e " ${NC}[\033[1;36m•14\033[0m] ${NC} \033[0;32m${bold}Renew Certi XRAY    ${NC}[\033[1;36m•23\033[0m]  ${NC}\033[0;32m${bold}Reboot"
-echo -e " ${NC}[\033[1;36m•15\033[0m] ${NC} \033[0;32m${bold}Check VPN Status"
+echo -e " ${NC}[\033[1;36m•15\033[0m] ${NC} \033[0;32m${bold}Check VPN Status    ${NC}[\033[1;36m•25\033[0m]  ${NC}\033[0;32m${bold}Theme Menu
 if [[ $serverV > $myver ]]; then
 echo -e " ${NC}[\033[1;36m•24\033[0m]  ${bold}Update Autoscript To $serverV\n"
 up2u="updatews"
