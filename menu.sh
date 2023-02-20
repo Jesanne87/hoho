@@ -12,7 +12,7 @@ P='\e[0;35m'
 B='\033[0;36m'
 G='\e[0;32m'
 N='\e[0m'
-export Server_URL="raw.githubusercontent.com/annelyah23/xyz/main"
+export Server_URL="raw.githubusercontent.com/Jesanne87/hoho/main"
 ###########- COLOR CODE -##############
 colornow=$(cat /etc/anggun/theme/color.conf)
 export NC="\e[0m"
@@ -150,7 +150,7 @@ clear
 echo -e "[ ${GREEN}INFO${NC} ] Check for Script updates . . ."
 sleep 2
 cd
-wget -q -O /root/update-v2.sh "https://raw.githubusercontent.com/annelyah23/xyz/main/update-v2.sh" && chmod +x update-v2.sh && ./update-v2.sh
+wget -q -O /root/update-v2.sh "https://raw.githubusercontent.com/Jesanne87/hoho/main/update-v2.sh" && chmod +x update-v2.sh && ./update-v2.sh
 sleep 2
 rm -f /root/update-v2.sh
 rm -f /home/ver
@@ -266,7 +266,7 @@ case $opt in
 22) clear ; restore ; menu ;;
 23) clear ; reboot ;;
 24) clear ; $up2u ; read -n1 -r -p "Press any key to continue..." ; menu ;;
-25) clear ; theme-menu ; read -n1 -r -p "Press any key to continue..." ; menu ;;
+25) clear ; menu-theme ; read -n1 -r -p "Press any key to continue..." ; menu ;;
 00 | 0) clear ; menu ;;
 x | X) exit ;;
 *) clear ; menu ;;
