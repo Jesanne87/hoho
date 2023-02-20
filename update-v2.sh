@@ -42,7 +42,7 @@ wget -O add-vless "https://raw.githubusercontent.com/Jesanne87/hoho/main/add-vle
 wget -O add-ws "https://raw.githubusercontent.com/Jesanne87/hoho/main/add-ws.sh" && chmod +x add-ws
 wget -O user-tr "https://raw.githubusercontent.com/Jesanne87/hoho/main/user-tr.sh" && chmod +x user-tr
 wget -O user-vless "https://raw.githubusercontent.com/Jesanne87/hoho/main/user-vless.sh" && chmod +x user-vless
-wget -O menu-theme "https://raw.githubusercontent.com/Jesanne87/hoho/menu-theme.sh" && chmod +x menu-theme
+wget -O menu-theme "https://raw.githubusercontent.com/Jesanne87/hoho/main/menu-theme.sh" && chmod +x menu-theme
 echo ""
 echo -e "[${green}INFO${NC}] Successfully Install New Update File !"
 sleep 1
