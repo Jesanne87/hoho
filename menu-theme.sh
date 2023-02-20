@@ -5,15 +5,15 @@ biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 colornow=$(cat /etc/anggun/theme/color.conf)
 NC="\e[0m"
 RED="\033[0;31m" 
-COLOR1="$(cat /etc/anggun/theme/$colornow | grep -w "TEXT" | cut -d: -f2|sed 's/ //g')"
-COLBG1="$(cat /etc/anggun/theme/$colornow | grep -w "BG" | cut -d: -f2|sed 's/ //g')"   
+COLOR1="$(cat /etc/JsPhantom/theme/$colornow | grep -w "TEXT" | cut -d: -f2|sed 's/ //g')"
+COLBG1="$(cat /etc/JsPhantom/theme/$colornow | grep -w "BG" | cut -d: -f2|sed 's/ //g')"   
 WH='\033[1;37m'                 
 ###########- END COLOR CODE -##########
 
 
 
 BURIQ () {
-    curl -sS https://raw.githubusercontent.com/annelyah23/permission/main/access > /root/tmp
+    curl -sS https://raw.githubusercontent.com/annelyah23/IP/access > /root/tmp
     data=( `cat /root/tmp | grep -E "^### " | awk '{print $2}'` )
     for user in "${data[@]}"
     do
@@ -31,7 +31,7 @@ BURIQ () {
 }
 
 MYIP=$(curl -sS ipv4.icanhazip.com)
-Name=$(curl -sS https://raw.githubusercontent.com/annelyah23/permission/main/access | grep $MYIP | awk '{print $2}')
+Name=$(curl -sS https://raw.githubusercontent.com/annelyah23/IP/main/access | grep $MYIP | awk '{print $2}')
 echo $Name > /usr/local/etc/.$Name.ini
 CekOne=$(cat /usr/local/etc/.$Name.ini)
 
@@ -48,7 +48,7 @@ fi
 
 PERMISSION () {
     MYIP=$(curl -sS ipv4.icanhazip.com)
-    IZIN=$(curl -sS https://raw.githubusercontent.com/annelyah23/permission/main/access | awk '{print $4}' | grep $MYIP)
+    IZIN=$(curl -sS https://raw.githubusercontent.com/annelyah23/IP/main/access | awk '{print $4}' | grep $MYIP)
     if [ "$MYIP" = "$IZIN" ]; then
     Bloman
     else
@@ -81,7 +81,7 @@ echo -ne " ${WH}Select menu ${COLOR1}: ${WH}"; read colormenu
 case $colormenu in
 01 | 1)
 clear
-echo "blue" >/etc/anggun/theme/color.conf
+echo "blue" >/etc/JsPhantom/theme/color.conf
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 echo -e "$COLOR1 ${NC} ${COLBG1}                ${WH}• BLUE THEME •                 ${NC} $COLOR1 $NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
@@ -96,7 +96,7 @@ echo -e "$COLOR1└────────────────────�
 ;;
 02 | 2)
 clear
-echo "red" >/etc/anggun/theme/color.conf
+echo "red" >/etc/JsPhantom/theme/color.conf
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 echo -e "$COLOR1 ${NC} ${COLBG1}                ${WH}• RED THEME •                  ${NC} $COLOR1 $NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
@@ -111,7 +111,7 @@ echo -e "$COLOR1└────────────────────�
 ;;
 03 | 3)
 clear
-echo "yellow" >/etc/anggun/theme/color.conf
+echo "yellow" >/etc/JsPhantom/theme/color.conf
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 echo -e "$COLOR1 ${NC} ${COLBG1}               ${WH}• YELLOW THEME •                ${NC} $COLOR1 $NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
@@ -126,7 +126,7 @@ echo -e "$COLOR1└────────────────────�
 ;;
 04 | 4)
 clear
-echo "cyan" >/etc/anggun/theme/color.conf
+echo "cyan" >/etc/JsPhantom/theme/color.conf
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 echo -e "$COLOR1 ${NC} ${COLBG1}                ${WH}• CYAN THEME •                 ${NC} $COLOR1 $NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
@@ -141,7 +141,7 @@ echo -e "$COLOR1└────────────────────�
 ;;
 05 | 5)
 clear
-echo "green" >/etc/anggun/theme/color.conf
+echo "green" >/etc/JsPhantom/theme/color.conf
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 echo -e "$COLOR1 ${NC} ${COLBG1}               ${WH}• GREEN THEME •                 ${NC} $COLOR1 $NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
@@ -156,7 +156,7 @@ echo -e "$COLOR1└────────────────────�
 ;;
 06 | 6)
 clear
-echo "magenta" >/etc/anggun/theme/color.conf
+echo "magenta" >/etc/JsPhantom/theme/color.conf
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 echo -e "$COLOR1 ${NC} ${COLBG1}               ${WH}• MAGENTA THEME •               ${NC} $COLOR1 $NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
