@@ -19,7 +19,7 @@ export NC="\e[0m"
 export YELLOW='\033[0;33m';
 export RED="\033[0;31m" 
 export COLOR1="$(cat /etc/JsPhantom/theme/$colornow | grep -w "TEXT" | cut -d: -f2|sed 's/ //g')"
-export COLBG1="$(cat /etc/anggun/JsPhantom/$colornow | grep -w "BG" | cut -d: -f2|sed 's/ //g')" 
+export COLBG1="$(cat /etc/JsPhantom/theme/$colornow | grep -w "BG" | cut -d: -f2|sed 's/ //g')" 
 WH='\033[1;37m'                   
 ###########- END COLOR CODE -##########
 clear
