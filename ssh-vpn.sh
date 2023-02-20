@@ -10,7 +10,7 @@ green='\e[0;32m'
 purple='\e[0;35m'
 orange='\e[0;33m'
 NC='\e[0m'
-export Server_URL="raw.githubusercontent.com/annelyah23/xyz/main"
+export Server_URL="raw.githubusercontent.com/Jesanne87/hoho/main"
 clear
 dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
@@ -276,7 +276,7 @@ wget -O menu-vless "https://${Server_URL}/menu-vless.sh"
 wget -O menu-xtr "https://${Server_URL}/menu-xtr.sh"
 wget -O menu-xrt "https://${Server_URL}/menu-xrt.sh"
 wget -O certxray "https://${Server_URL}/cert.sh"
-wget -O menu-theme "https://raw.githubusercontent.com/annelyah23/snip/main/update/menu-theme.sh"
+wget -O menu-theme "https://raw.githubusercontent.com/Jesanne87/hoho/main/menu-theme.sh"
 chmod +x menu-tr
 chmod +x menu-ws
 chmod +x menu-vless
