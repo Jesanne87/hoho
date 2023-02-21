@@ -5,6 +5,14 @@
 # Auther  : JsPhantom
 # (C) Copyright 2023
 # =========================================
+###########- COLOR CODE -##############
+colornow=$(cat /etc/JsPhantom/theme/color.conf)
+NC="\e[0m"
+RED="\033[0;31m" 
+COLOR1="$(cat /etc/JsPhantom/theme/$colornow | grep -w "TEXT" | cut -d: -f2|sed 's/ //g')"
+COLBG1="$(cat /etc/JsPhantom/theme/$colornow | grep -w "BG" | cut -d: -f2|sed 's/ //g')"   
+WH='\033[1;37m'                 
+###########- END COLOR CODE -##########
 clear
 MYIP2=$(wget -qO- ipv4.icanhazip.com);
 domain=$(cat /root/domain)
@@ -327,7 +335,7 @@ service cron restart
 
 clear
 echo -e ""
-echo -e "════════════[TRIAL XRAY TROJAN TCP XTLS]════════════"
+echo -e "$COLOR1===================${NC}[TRIAL XRAY TROJAN TCP XTLS]$COLOR1===================${NC}"
 echo -e "Remarks              : ${user}"
 echo -e "Domain               : ${domain}"
 echo -e "Password             : ${uuid}"
@@ -338,22 +346,22 @@ echo -e "Network              : TCP"
 echo -e "Security             : XTLS"
 echo -e "Flow                 : Direct & Splice"
 echo -e "AllowInsecure        : True/Allow"
-echo -e "═══════════════════"
+echo -e "$COLOR1===================${NC}"
 echo -e "Link Direct          : ${trojanlink1}"
-echo -e "═══════════════════"
+echo -e "$COLOR1===================${NC}"
 echo -e "Link Direct UDP 443  : ${trojanlink2}"
-echo -e "═══════════════════"
+echo -e "$COLOR1===================${NC}"
 echo -e "Link Splice          : ${trojanlink3}"
-echo -e "═══════════════════"
+echo -e "$COLOR1===================${NC}"
 echo -e "Link Splice UDP 443  : ${trojanlink4}"
-echo -e "═══════════════════"
+echo -e "$COLOR1===================${NC}"
 echo -e "YAML Direct          : http://${MYIP2}:81/$user-TRDIRECT.yaml"
-echo -e "═══════════════════"
+echo -e "$COLOR1===================${NC}"
 echo -e "YAML Splice          : http://${MYIP2}:81/$user-TRSPLICE.yaml"
-echo -e "═══════════════════"
+echo -e "$COLOR1===================${NC}"
 echo -e "Created On           : $hariini"
 echo -e "Expired On           : $exp"
-echo -e "═══════════════════"
+echo -e "$COLOR1===================${NC}"
 echo -e ""
 echo -e "Autoscript By JsPhantom"
-echo -e ""�
+echo -e ""
