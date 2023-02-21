@@ -224,6 +224,7 @@ echo -e " ${WH}[${COLOR1}13${WH}]$NC ${COLOR1}• ${WH}${NC}\033[0;32m${bold}Ads
 if [[ $serverV > $myver ]]; then
 
 echo -e " ${WH}[${COLOR1}22${WH}]$NC ${COLOR1}• ${WH}${bold}Update Autoscript To $serverV\n"
+echo -e "$COLOR1•======================================================•${NC}"
 up2u="updatews"
 else
 up2u="menu"
