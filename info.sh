@@ -5,6 +5,12 @@
 # Auther  : JsPhantom
 # (C) Copyright 2023
 # =========================================
+colornow=$(cat /etc/JsPhantom/theme/color.conf)
+export NC="\e[0m"
+export YELLOW='\033[0;33m';
+export RED="\033[0;31m" 
+export COLOR1="$(cat /etc/JsPhantom/theme/$colornow | grep -w "TEXT" | cut -d: -f2|sed 's/ //g')"
+export COLBG1="$(cat /etc/JsPhantom/theme/$colornow | grep -w "BG" | cut -d: -f2|sed 's/ //g')" 
 clear
 NC='\e[0m'
 ## Foreground
@@ -18,27 +24,27 @@ CB='\e[35;1m'
 WB='\e[37;1m'
 
 echo ""
-echo -e "${CB}————————————————————————————————————————————————————————${NC}"
-echo -e "${RB}          🚀 ${NC} ${WB}${bold}Premium Autoscript By JsPhantom ${NC} ${RB}🚀 ${NC}"
-echo -e "${CB}————————————————————————————————————————————————————————${NC}"
+echo -e "$COLOR1————————————————————————————————————————————————————————${NC}"
+echo -e "$COLOR1          🚀 ${NC} ${WB}${bold}Premium Autoscript By JsPhantom ${NC} ${RB}🚀 ${NC}"
+echo -e "$COLOR1————————————————————————————————————————————————————————${NC}"
 echo -e "                  ${WB}»»» ${bold}Info Xray «««${NC}"
-echo -e "${CB}————————————————————————————————————————————————————————${NC}"
+echo -e "$COLOR1————————————————————————————————————————————————————————${NC}"
 echo -e "  ${GB}✅${NC} ${YB}${bold}Xray Vmess Ws Tls : 443${NC}   ${WB}|${NC}  ${GB}✅${NC} ${YB}${bold}Websocket (CDN) TLS : 443${NC}"
 echo -e "  ${GB}✅${NC} ${YB}${bold}Xray Vless Ws Tls : 443${NC}   ${WB}|${NC}  ${GB}✅${NC} ${YB}${bold}Websocket (CDN) NTLS :80${NC}"
 echo -e "  ${GB}✅${NC} ${YB}${bold}Xray Trojan Ws Tls : 443${NC}  ${WB}|${NC}  ${GB}✅${NC} ${YB}${bold}TCP XTLS :443${NC}"
 echo -e "  ${GB}✅${NC} ${YB}${bold}Trojan TCP XTLS : 443${NC}     ${WB}|${NC}  ${GB}✅${NC} ${YB}${bold}TCP TLS : 443${NC}"
 echo -e "  ${GB}✅${NC} ${YB}${bold}Trojan TCP : 443${NC}          ${WB}|${NC}"
-echo -e "${CB}————————————————————————————————————————————————————————${NC}"
+echo -e "$COLOR1————————————————————————————————————————————————————————${NC}"
 echo -e "           ${WB}»»» ${bold}YAML Service Information «««${NC}          "
-echo -e "${CB}————————————————————————————————————————————————————————${NC}"
+echo -e "$COLOR1————————————————————————————————————————————————————————${NC}"
 echo -e "  ${GB}✅${NC} ${YB}Yaml Xray Vmess WS${NC}"
 echo -e "  ${GB}✅${NC} ${YB}Yaml Xray Vless WS${NC}"
 echo -e "  ${GB}✅${NC} ${YB}Yaml Xray Trojan WS${NC}"
 echo -e "  ${GB}✅${NC} ${YB}Yaml Xray Trojan XTLS${NC}"
 echo -e "  ${GB}✅${NC} ${YB}Yaml Xray Trojan TCP${NC}"
-echo -e "${CB}————————————————————————————————————————————————————————${NC}"
+echo -e "$COLOR1————————————————————————————————————————————————————————${NC}"
 echo -e "             ${WB}»»» ${bold}Server Information «««${NC}                 "
-echo -e "${CB}————————————————————————————————————————————————————————${NC}"
+echo -e "$COLOR1————————————————————————————————————————————————————————${NC}"
 echo -e "  ${MB}♦️${NC} ${YB}${bold}Timezone           ${GB}: ${bold}Asia/Kuala_Lumpur (GMT +8)${NC}"
 echo -e "  ${MB}♦️${NC} ${YB}${bold}Fail2Ban           ${GB}: ${bold}[ON]${NC}"
 echo -e "  ${MB}♦️${NC} ${YB}${bold}Dflate             ${GB}: ${bold}[ON]${NC}"
@@ -55,7 +61,7 @@ echo -e "  ${GB}✅${NC} ${YB}${bold}Check Created Config${NC}"
 echo -e "  ${GB}✅${NC} ${YB}${bold}Automatic Clear Log${NC}"
 echo -e "  ${GB}✅${NC} ${YB}${bold}Media Checker${NC}"
 echo -e "  ${GB}✅${NC} ${YB}${bold}DNS Changer${NC}"
-echo -e "${CB}————————————————————————————————————————————————————————${NC}"
+echo -e "$COLOR1${CB}————————————————————————————————————————————————————————${NC}"
 echo -e "           ${WB}»»» ${bold}Autoscript By JsPhantom «««${NC}             "
-echo -e "${CB}————————————————————————————————————————————————————————${NC}"
+echo -e "$COLOR1————————————————————————————————————————————————————————${NC}"
 echo ""
