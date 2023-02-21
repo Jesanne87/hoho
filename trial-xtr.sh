@@ -5,6 +5,14 @@
 # Auther  : JsPhantom
 # (C) Copyright 2023
 # =========================================
+###########- COLOR CODE -##############
+colornow=$(cat /etc/JsPhantom/theme/color.conf)
+NC="\e[0m"
+RED="\033[0;31m" 
+COLOR1="$(cat /etc/JsPhantom/theme/$colornow | grep -w "TEXT" | cut -d: -f2|sed 's/ //g')"
+COLBG1="$(cat /etc/JsPhantom/theme/$colornow | grep -w "BG" | cut -d: -f2|sed 's/ //g')"   
+WH='\033[1;37m'                 
+###########- END COLOR CODE -##########
 clear
 MYIP2=$(wget -qO- ipv4.icanhazip.com);
 domain=$(cat /root/domain)
@@ -175,7 +183,7 @@ service cron restart
 
 clear
 echo -e ""
-echo -e "════[TRIAL XRAY TROJAN TCP]════"
+echo -e "$COLOR1===================${NC}[TRIAL XRAY TROJAN TCP]$COLOR1===================${NC}"
 echo -e "Remarks           : ${user}"
 echo -e "Domain            : ${domain}"
 echo -e "Port              : 443"
@@ -183,14 +191,14 @@ echo -e "Key               : ${uuid}"
 echo -e "Network           : TCP"
 echo -e "Security          : TLS"
 echo -e "AllowInsecure     : True"
-echo -e "═══════════════════"
+echo -e "$COLOR1===================${NC}"
 echo -e "Link XRAY Trojan  : ${trojanlink}"
-echo -e "═══════════════════"
+echo -e "$COLOR1===================${NC}"
 echo -e "YAML XRAY Trojan  : http://${MYIP2}:81/$user-TRTCP.yaml"
-echo -e "═══════════════════"
+echo -e "$COLOR1===================${NC}"
 echo -e "Created On        : $hariini"
 echo -e "Expired On        : $exp"
-echo -e "═══════════════════"
+echo -e "$COLOR1===================${NC}"
 echo -e ""
 echo -e "Autoscript By JsPhantom"
 echo -e ""
