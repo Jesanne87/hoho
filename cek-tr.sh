@@ -24,7 +24,7 @@ NC='\e[0m'
 echo -n > /tmp/other.txt
 data=( `cat /usr/local/etc/xray/trojanws.json | grep '^###' | cut -d ' ' -f 2 | sort | uniq`);
 echo -e "$COLOR1╔============================================╗\033[0m"
-echo -e "$COLOR1  ${COLBG1}          ${WH}${bold}Xray Trojan WS User Login             \033[0m"
+echo -e "$COLOR1 ${COLBG1}          ${WH}${bold}Xray Trojan WS User Login         \033[0m"
 echo -e "$COLOR1╚============================================╝\033[0m"
 for akun in "${data[@]}"
 do
