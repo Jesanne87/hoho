@@ -16,21 +16,21 @@ MYIP=$(wget -qO- ipv4.icanhazip.com);
 IPVPS=$(curl -s icanhazip.com/ip )
 NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/usr/local/etc/xray/trojanws.json")
         if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
-                echo -e "\033[0;34m╔============================================╗\033[0m"
-                echo -e "\e[0;35m        Check XRAY Trojan WS Config    \e[0m"
-                echo -e "\033[0;34m╚============================================╝\033[0m"
+                echo -e "$COLOR1╔============================================╗\033[0m"
+                echo -e "$COLOR1 ${COLBG1}        ${WH}Check Xray Trojan WS Config    \e[0m"
+                echo -e "$COLOR1╚============================================╝\033[0m"
                 echo ""
                 echo "You have no existing clients!"
                 echo ""
                 exit 1
         fi
 
-        echo -e "\033[0;34m╔============================================╗\033[0m"
-        echo -e "\e[0;35m        Check XRAY Trojan WS Config    \e[0m"
-        echo -e "\033[0;34m╚============================================╝\033[0m"
+        echo -e "$COLOR1╔============================================╗\033[0m"
+        echo -e "$COLOR1 ${COLBG1}       ${WH}Check XRAY Trojan WS Config    \e[0m"
+        echo -e "$COLOR1╚============================================╝\033[0m"
         echo " Select the existing client to view the config"
         echo " Press CTRL+C to return"
-        echo -e "\033[0;34m============================================\033[0m"
+        echo -e "$COLOR1============================================\033[0m"
         echo "     No  Expired   User"
         grep -E "^### " "/usr/local/etc/xray/trojanws.json" | cut -d ' ' -f 2-3 | nl -s ') '
         until [[ ${CLIENT_NUMBER} -ge 1 && ${CLIENT_NUMBER} -le ${NUMBER_OF_CLIENTS} ]]; do
@@ -70,7 +70,7 @@ trojanlink2="trojan://${uuid}@${sts}${domain}:80?type=ws&security=none&host=${do
 
 clear
 echo -e ""
-echo -e "═══[Xray Trojan WS]═══"
+echo -e "===================${NC}[${bold}Xray Trojan WS]===================${NC}"
 echo -e "Remarks           : ${user}"
 echo -e "Domain            : ${domain}"
 echo -e "IP Address        : $IPVPS"
@@ -82,16 +82,16 @@ echo -e "Encryption        : None"
 echo -e "Network           : WS"
 echo -e "Path TLS          : /trojan-tls"
 echo -e "Path NTLS         : /trojan-ntls"
-echo -e "═══════════════════"
+echo -e "$COLOR1===================${NC}"
 echo -e "Link WS TLS       : ${trojanlink1}"
 echo -e "═══════════════════"
 echo -e "Link WS None TLS  : ${trojanlink2}"
-echo -e "═══════════════════"
+echo -e "$COLOR1===================${NC}"
 echo -e "YAML WS TLS       : http://${MYIP}:81/$user-TRTLS.yaml"
-echo -e "═══════════════════"
+echo -e "$COLOR1===================${NC}"
 echo -e "Created On        : $hariini"
 echo -e "Expired On        : $exp"
-echo -e "═══════════════════"
+echo -e "$COLOR1===================${NC}"
 echo -e ""
 echo -e "Autoscript By JsPhantom"
 echo -e ""
