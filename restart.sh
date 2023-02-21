@@ -5,6 +5,14 @@
 # Auther  : JsPhantom
 # (C) Copyright 2023
 # =========================================
+###########- COLOR CODE -##############
+colornow=$(cat /etc/JsPhantom/theme/color.conf)
+NC="\e[0m"
+RED="\033[0;31m" 
+COLOR1="$(cat /etc/JsPhantom/theme/$colornow | grep -w "TEXT" | cut -d: -f2|sed 's/ //g')"
+COLBG1="$(cat /etc/JsPhantom/theme/$colornow | grep -w "BG" | cut -d: -f2|sed 's/ //g')"   
+WH='\033[1;37m'                 
+###########- END COLOR CODE -##########
 clear
 red='\e[1;31m'
 green='\e[0;32m'
@@ -73,9 +81,9 @@ res11() {
 }
 
 clear
-echo -e "\e[36m╔============================================╗\033[0m"
-echo -e " \e[0;35m           RESTART SERVICE SERVER           \e[0m"
-echo -e "\e[36m╚============================================╝\033[0m"
+echo -e "$COLOR1╔============================================╗\033[0m"
+echo -e " $COLOR1${COLBG1}          ${WH}Restart Service Center            \e[0m"
+echo -e "$COLOR1╚============================================╝\033[0m"
 echo -e ""
 echo -e "  \033[1;91m Service Restart Fail2ban\033[1;37m"
 fun_bar 'res1'
