@@ -5,6 +5,15 @@
 # Auther  : JsPhantom
 # (C) Copyright 2023
 # =========================================
+# =========================================
+###########- COLOR CODE -##############
+colornow=$(cat /etc/JsPhantom/theme/color.conf)
+NC="\e[0m"
+RED="\033[0;31m" 
+COLOR1="$(cat /etc/JsPhantom/theme/$colornow | grep -w "TEXT" | cut -d: -f2|sed 's/ //g')"
+COLBG1="$(cat /etc/JsPhantom/theme/$colornow | grep -w "BG" | cut -d: -f2|sed 's/ //g')"   
+WH='\033[1;37m'                 
+###########- END COLOR CODE -##########
 red='\e[1;31m'
 green='\e[0;32m'
 yell='\e[1;33m'
@@ -53,16 +62,16 @@ else
 sts="${Error}"
 fi
 clear
-echo -e "\e[36m╔===========================================╗\033[0m"
-echo -e " \e[0;35m            LIMIT BANDWITH SPEED            \033[0m"
-echo -e "\e[36m╚===========================================╝\033[0m
+echo -e "$COLOR1╔===========================================╗\033[0m"
+echo -e " $COLOR1${COLBG1}           ${WH}LIMIT BANDWITH SPEED            \033[0m"
+echo -e "$COLOR1╚===========================================╝\033[0m
 \e[1;31mLimit Bandwith Speed${NC} \e[1;33mJsPhantom\033[0m
 \033[1;37mTelegram : https://t.me/JsPhantom / @JsPhantom\033[0m"
 echo ""
 echo -e "   Status : $sts"
-echo -e "[\033[1;36m•1 \033[0m]  ${NC}\e[0;32mStart Limit\033[0m"
-echo -e "[\033[1;36m•2 \033[0m]  ${NC}\e[0;32mStop Limit\033[0m"
-echo -e "[\033[1;36m•3 \033[0m]  ${NC}\e[0;32mBack To Main Menu\033[0m"
+echo -e " ${WH}[${COLOR1}01${WH}]$NC${COLOR1}•${WH}Start Limit\033[0m"
+echo -e " ${WH}[${COLOR1}02${WH}]$NC${COLOR1}•${WH}Stop Limit\033[0m"
+echo -e " ${WH}[${COLOR1}03${WH}]$NC${COLOR1}•Back To Main Menu\033[0m"
 echo ""
 echo -e " \033[1;37mPress [ Ctrl+C ] • To-Exit-Script\033[0m"
 echo ""
