@@ -5,6 +5,14 @@
 # Auther  : JsPhantom
 # (C) Copyright 2023
 # =========================================
+###########- COLOR CODE -##############
+colornow=$(cat /etc/JsPhantom/theme/color.conf)
+NC="\e[0m"
+RED="\033[0;31m" 
+COLOR1="$(cat /etc/JsPhantom/theme/$colornow | grep -w "TEXT" | cut -d: -f2|sed 's/ //g')"
+COLBG1="$(cat /etc/JsPhantom/theme/$colornow | grep -w "BG" | cut -d: -f2|sed 's/ //g')"   
+WH='\033[1;37m'                 
+###########- END COLOR CODE -##########
 red='\e[1;31m'
 green='\e[0;32m'
 purple='\e[0;35m'
@@ -12,9 +20,9 @@ orange='\e[0;33m'
 NC='\e[0m'
 clear
 echo -e ""
-echo -e "\e[36m╔============================================╗\033[0m"
-echo -e " \e[0;35m                SYSTEM STATUS               \033[0m"
-echo -e "\e[36m╚============================================╝\033[0m"
+echo -e "$COLOR1╔============================================╗\033[0m"
+echo -e " $COLOR1${COLBG1}               ${WH}System Status                \033[0m"
+echo -e "$COLOR1╚============================================╝\033[0m"
 echo ""
 status="$(systemctl show cron.service --no-page)"
 status_text=$(echo "${status}" | grep 'ActiveState=' | cut -f2 -d=)
@@ -115,4 +123,5 @@ else
 echo -e " XRAY Trojan TCP TLS		: "$red"Not Running (Error)"$NC""
 fi
 
+echo -e "$COLOR1•============================================•${NC}"
 echo ""
