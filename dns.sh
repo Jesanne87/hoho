@@ -22,8 +22,8 @@ G='\033[0;32m'
 NC='\e[0m'
 N='\e[0m'
 clear
-echo -e "$COLOR1\e[36m╔===========================================╗\033[0m"
-echo -e " $COLOR1${COLBG1}              ${WH} ${bold}DNS Changer                 \033[0m"
+echo -e "$COLOR1╔===========================================╗\033[0m"
+echo -e "$COLOR1${COLBG1}              ${WH} ${bold}DNS Changer                  \033[0m"
 echo -e "$COLOR1╚===========================================╝\033[0m
 \033[0;32mDNS Changer By${NC} \e[1;33mJsPhantom\033[0m
 \033[1;37mTelegram : https://t.me/JsPhantom / @JsPhantom\033[0m"
