@@ -5,6 +5,13 @@
 # Auther  : JsPhantom
 # (C) Copyright 2023
 # =========================================
+colornow=$(cat /etc/JsPhantom/theme/color.conf)
+NC="\e[0m"
+RED="\033[0;31m" 
+COLOR1="$(cat /etc/JsPhantom/theme/$colornow | grep -w "TEXT" | cut -d: -f2|sed 's/ //g')"
+COLBG1="$(cat /etc/JsPhantom/theme/$colornow | grep -w "BG" | cut -d: -f2|sed 's/ //g')"   
+WH='\033[1;37m'                 
+###########- END COLOR CODE -##########
 clear
 red='\e[1;31m'
 green='\e[0;32m'
@@ -14,20 +21,20 @@ purple='\e[0;35m'
 NC='\e[0m'
 NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/usr/local/etc/xray/vless.json")
 	if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
-		echo -e "\033[0;34m╔============================================╗\033[0m"
-        echo -e "\e[0;35m         Renew XRAY Vless WS Account    \e[0m"
-        echo -e "\033[0;34m╚============================================╝\033[0m"
+		echo -e "$COLOR1╔============================================╗\033[0m"
+  echo -e "$COLOR1${COLBG1}        ${WH}Renew XRAY Vless WS Account          \e[0m"
+       echo -e "$COLOR1╚============================================╝\033[0m"
 		echo ""
 		echo "You have no existing clients!"
         echo ""
 		exit 1
 	fi
-	echo -e "\033[0;34m╔============================================╗\033[0m"
-    echo -e "\e[0;35m         Renew XRAY Vless WS Account    \e[0m"
-    echo -e "\033[0;34m╚============================================╝\033[0m"
+	echo -e "$COLOR1╔============================================╗\033[0m"
+    echo -e "$COLOR1 ${COLBG1}       ${WH}Renew XRAY Vless WS Account          \e[0m"
+    echo -e "$COLOR1╚============================================╝\033[0m"
 	echo "Select the existing client you want to renew"
 	echo " Press CTRL+C to return"
-	echo -e "\033[0;34m============================================\033[0m"
+	echo -e " $COLOR1============================================\033[0m"
 	grep -E "^### " "/usr/local/etc/xray/vless.json" | cut -d ' ' -f 2-3 | nl -s ') '
 	until [[ ${CLIENT_NUMBER} -ge 1 && ${CLIENT_NUMBER} -le ${NUMBER_OF_CLIENTS} ]]; do
 		if [[ ${CLIENT_NUMBER} == '1' ]]; then
@@ -53,10 +60,10 @@ service cron restart
 clear
 echo ""
 echo " XRAY Vless WS Account Renewed"
-echo -e "\033[0;34m============================================\033[0m"
+echo -e "$COLOR1============================================\033[0m"
 echo " Client Name : $user"
 echo " Expired On  : $exp4"
-echo -e "\033[0;34m============================================\033[0m"
+echo -e "$COLOR1============================================\033[0m"
 echo -e ""
 echo -e "Autoscript By JsPhantom"
 echo -e ""
