@@ -5,6 +5,14 @@
 # Auther  : JsPhantom
 # (C) Copyright 2023
 # =========================================
+###########- COLOR CODE -##############
+colornow=$(cat /etc/JsPhantom/theme/color.conf)
+NC="\e[0m"
+RED="\033[0;31m" 
+COLOR1="$(cat /etc/JsPhantom/theme/$colornow | grep -w "TEXT" | cut -d: -f2|sed 's/ //g')"
+COLBG1="$(cat /etc/JsPhantom/theme/$colornow | grep -w "BG" | cut -d: -f2|sed 's/ //g')"   
+WH='\033[1;37m'                 
+###########- END COLOR CODE -##########
 red='\e[1;31m'
 green='\e[0;32m'
 NC='\e[0m'
@@ -87,21 +95,21 @@ PERMISSION() {
 domain=$(cat /root/domain)
 MYIP=$(wget -qO- ipv4.icanhazip.com);
 until [[ $user =~ ^[a-zA-Z0-9_]+$ && ${CLIENT_EXISTS} == '0' ]]; do
-		echo -e "\033[0;34m╔============================================╗\033[0m"
-        echo -e "\033[35;1m       ${bold}Add XRAY Trojan TCP XTLS Account  \033[0m"
-        echo -e "\033[0;34m╚============================================╝\033[0m"
+		echo -e "$COLOR1╔============================================╗\033[0m"
+        echo -e "$COLOR1 ${COLBG1}      ${WH}${bold}Add XRAY Trojan TCP XTLS Account      \033[0m"
+        echo -e "$COLOR1╚============================================╝\033[0m"
 		read -rp "Username : " -e user
 		CLIENT_EXISTS=$(grep -w $user /usr/local/etc/xray/xtrojan.json | wc -l)
 
 		if [[ ${CLIENT_EXISTS} == '1' ]]; then
 clear
-		echo -e "\033[0;34m╔============================================╗\033[0m"
-        echo -e "\033[35;1m ${bold} Add XRAY Trojan TCP XTLS Account  \033[0m"
-        echo -e "\033[0;34m╚============================================╝\033[0m"
+		echo -e "$COLOR1╔============================================╗\033[0m"
+        echo -e "$COLOR1${COLBG1}${WH}${bold} Add XRAY Trojan TCP XTLS Account  \033[0m"
+        echo -e "$COLOR1╚============================================╝\033[0m"
 		echo ""
 		echo "A client with the specified name was already created, please choose another name."
 		echo ""
-		echo -e "\033[0;34m────────────────────────────────────────────────\033[0m"
+		echo -e "$COLOR1===============================================\033[0m"
     read -n 1 -s -r -p "Press any key to back on menu"
 		menu
 		fi
@@ -442,7 +450,7 @@ EOF
 
 clear
 echo -e ""
-echo -e "════[${bold}Xray Trojan TCP XTLS]═════"
+echo -e "$COLOR1===================${NC}[${bold}Xray Trojan TCP XTLS]$COLOR1===================${NC}"
 echo -e "Remarks              : ${user}"
 echo -e "Domain               : ${domain}"
 echo -e "IP Address           : $IPVPS"
@@ -454,22 +462,22 @@ echo -e "Network              : TCP"
 echo -e "Security             : XTLS"
 echo -e "Flow                 : Direct & Splice"
 echo -e "AllowInsecure        : True/Allow"
-echo -e "═══════════════════"
+echo -e "$COLOR1===================${NC}"
 echo -e "Link Direct          : ${trojanlink1}"
-echo -e "═══════════════════"
+echo -e "$COLOR1===================${NC}"
 echo -e "Link Direct UDP 443  : ${trojanlink2}"
-echo -e "═══════════════════"
+echo -e "$COLOR1===================${NC}"
 echo -e "Link Splice          : ${trojanlink3}"
-echo -e "═══════════════════"
+echo -e "$COLOR1===================${NC}"
 echo -e "Link Splice UDP 443  : ${trojanlink4}"
-echo -e "═══════════════════"
+echo -e "$COLOR1===================${NC}"
 echo -e "YAML Direct          : http://${MYIP}:81/$user-TRDIRECT.yaml"
-echo -e "═══════════════════"
+echo -e "$COLOR1===================${NC}"
 echo -e "YAML Splice          : http://${MYIP}:81/$user-TRSPLICE.yaml"
-echo -e "═══════════════════"
+echo -e "$COLOR1===================${NC}"
 echo -e "Created On           : $hariini"
 echo -e "Expired On           : $exp"
-echo -e "═══════════════════"
+echo -e "$COLOR1===================${NC}"
 echo -e ""
 echo -e "Autoscript By ${bold}JsPhantom"
 echo -e ""
