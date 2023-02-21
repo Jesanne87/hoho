@@ -18,7 +18,7 @@ B='\033[0;36m'
 N='\e[0m'
 clear
 echo -e "$COLOR1╔============================================╗\033[0m"
-echo -e " $COLOR1 ${COLBG1}           ${WH}XRAY TROJAN TCP MENU            \033[0m"
+echo -e " $COLOR1${COLBG1}           ${WH}Xray Trojan TCP Menu             \033[0m"
 echo -e "$COLOR1╚============================================╝\033[0m"
 
 echo -e " ${WH}[${COLOR1}01${WH}]$NC ${COLOR1}• ${WH}Add XRAY Trojan TCP Account\033[0m"
