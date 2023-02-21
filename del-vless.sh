@@ -22,7 +22,7 @@ NC='\e[0m'
 NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/usr/local/etc/xray/vless.json")
 	if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
         echo -e "$COLOR1╔===========================================╗\033[0m"
-        echo -e "$COLOR1 ${COLBG1}       ${WH}Delete XRAY Vless WS Account    \033[0m"
+        echo -e "$COLOR1 ${COLBG1}       ${WH}Delete XRAY Vless WS Account         \033[0m"
         echo -e "$COLOR1╚===========================================╝\033[0m"
 		echo ""
 		echo "You have no existing clients!"
@@ -30,12 +30,12 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/usr/local/etc/xray/vless.json")
 		exit 1
 	fi
         echo -e "$COLOR1╔===========================================╗\033[0m"
-        echo -e "$COLOR1 ${COLBG1}       ${WH}Delete XRAY Vless WS Account    \033[0m"
+        echo -e "$COLOR1 ${COLBG1}       ${WH}Delete XRAY Vless WS Account        \033[0m"
         echo -e "$COLOR1╚===========================================╝\033[0m"
 	
 	echo " Select the existing client you want to remove"
 	echo " Press CTRL+C to return"
-	  echo -e "$COLOR1============================================\033[0m"
+	  echo -e " $COLOR1============================================\033[0m"
 	echo "     No  Expired   User"
 	grep -E "^### " "/usr/local/etc/xray/vless.json" | cut -d ' ' -f 2-3 | nl -s ') '
 	until [[ ${CLIENT_NUMBER} -ge 1 && ${CLIENT_NUMBER} -le ${NUMBER_OF_CLIENTS} ]]; do
