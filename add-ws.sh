@@ -5,6 +5,14 @@
 # Auther  : JsPhantom
 # (C) Copyright 2023
 # =========================================
+###########- COLOR CODE -##############
+colornow=$(cat /etc/JsPhantom/theme/color.conf)
+NC="\e[0m"
+RED="\033[0;31m" 
+COLOR1="$(cat /etc/JsPhantom/theme/$colornow | grep -w "TEXT" | cut -d: -f2|sed 's/ //g')"
+COLBG1="$(cat /etc/JsPhantom/theme/$colornow | grep -w "BG" | cut -d: -f2|sed 's/ //g')"   
+WH='\033[1;37m'                 
+###########- END COLOR CODE -##########
 clear
 dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
@@ -92,22 +100,22 @@ clear
 domain=$(cat /root/domain)
 MYIP2=$(wget -qO- ipv4.icanhazip.com);
 until [[ $user =~ ^[a-zA-Z0-9_]+$ && ${CLIENT_EXISTS} == '0' ]]; do
-echo -e "\033[0;34m╔============================================╗\033[0m"
-echo -e "\033[35;1m          ${bold}Add XRAY Vmess WS Account     \033[0m"
-echo -e "\033[0;34m╚============================================╝\033[0m"
+echo -e "$COLOR1╔============================================╗\033[0m"
+echo -e "$COLOR1 ${COLBG1}         ${WH}Add XRAY Vmess WS Account          \033[0m"
+echo -e "$COLOR1╚============================================╝\033[0m"
 
                 read -rp "Username : " -e user
                 CLIENT_EXISTS=$(grep -w $user /usr/local/etc/xray/config.json | wc -l)
 
                 if [[ ${CLIENT_EXISTS} == '1' ]]; then
 clear
-		                echo -e "\033[0;34m╔============================================╗\033[0m"
-                        echo -e "\033[35;1m     ${bold}Add XRAY Vmess WS Account     \033[0m"
-                        echo -e "\033[0;34m╚============================================╝\033[0m"
+		                echo -e "$COLOR1╔============================================╗\033[0m"
+                        echo -e "$COLOR1 ${COLBG1}   ${WH}Add XRAY Vmess WS Account          \033[0m"
+                        echo -e "$COLOR1╚============================================╝\033[0m"
                         echo ""
                         echo "A client with the specified name was already created, please choose another name."
                         echo ""
-                        echo -e "\033[0;34m────────────────────────────────────────────────\033[0m"
+                        echo -e "$COLOR1================================================\033[0m"
                         read -n 1 -s -r -p "Press any key to back on menu"
                         menu
                 fi
@@ -311,7 +319,7 @@ dns:
     - "*.mcdn.bilivideo.cn"
     - +.media.dssott.com
 proxies:
-  - name: XRAY_VMESS_TLS_${user}
+  - name: Xray_vmess_TLS_${user}
     server: ${sts}${domain}
     port: 443
     type: vmess
@@ -331,7 +339,7 @@ proxy-groups:
   - name: Geo-Autoscript
     type: select
     proxies:
-      - XRAY_VMESS_TLS_${user}
+      - Xray_vmess_TLS_${user}
       - DIRECT
 rules:
   - MATCH,Geo-Autoscript
@@ -488,7 +496,7 @@ proxy-groups:
   - name: Geo-Autoscript
     type: select
     proxies:
-      - XRAY_VMESS_NON_TLS_${user}
+      - Xray_Vmess_non_TLS_${user}
       - DIRECT
 rules:
   - MATCH,JsPhantom-Autoscript
@@ -496,7 +504,7 @@ EOF
 
 clear
 echo -e ""
-echo -e "════[${bold}Xray vmess WS]═════"
+echo -e "$COLOR1===================${NC}[${bold}Xray vmess WS]$COLOR1===================${NC}"
 echo -e "Remarks           : ${user}"
 echo -e "Domain            : ${domain}"
 echo -e "IP Address        : $IPVPS"
@@ -508,18 +516,18 @@ echo -e "Security          : Auto"
 echo -e "Network           : WS"
 echo -e "Path TLS          : /vmess-tls"
 echo -e "Path NTLS         : /vmess-ntls"
-echo -e "═══════════════════"
+echo -e "$COLOR1===================${NC}"
 echo -e "Link WS TLS       : ${vmesslink1}"
-echo -e "═══════════════════"
+echo -e "$COLOR1===================${NC}"
 echo -e "Link WS None TLS  : ${vmesslink2}"
-echo -e "═══════════════════"
+echo -e "$COLOR1===================${NC}"
 echo -e "YAML WS TLS       : http://${MYIP2}:81/$user-VMESSTLS.yaml"
-echo -e "═══════════════════"
+echo -e "$COLOR1===================${NC}"
 echo -e "YAML WS None TLS  : http://${MYIP2}:81/$user-VMESSNTLS.yaml"
-echo -e "═══════════════════"
+echo -e "$COLOR1===================${NC}"
 echo -e "Created On        : $hariini"
 echo -e "Expired On        : $exp"
-echo -e "═══════════════════"
+echo -e "$COLOR1===================${NC}"
 echo -e ""
 echo -e "Autoscript By ${bold}JsPhantom"
 echo -e ""
