@@ -5,6 +5,13 @@
 # Auther  : JsPhantom
 # (C) Copyright 2023
 # =========================================
+colornow=$(cat /etc/JsPhantom/theme/color.conf)
+NC="\e[0m"
+RED="\033[0;31m" 
+COLOR1="$(cat /etc/JsPhantom/theme/$colornow | grep -w "TEXT" | cut -d: -f2|sed 's/ //g')"
+COLBG1="$(cat /etc/JsPhantom/theme/$colornow | grep -w "BG" | cut -d: -f2|sed 's/ //g')"   
+WH='\033[1;37m'                 
+###########- END COLOR CODE -##########
 clear
 red='\e[1;31m'
 green='\e[0;32m'
@@ -14,9 +21,9 @@ purple='\e[0;35m'
 NC='\e[0m'
 echo -n > /tmp/other.txt
 data=( `cat /usr/local/etc/xray/config.json | grep '^###' | cut -d ' ' -f 2 | sort | uniq`);
-echo -e "\033[0;34m╔============================================╗\033[0m"
-echo -e "\e[0;35m            ${bold}Xray Vmess WS User Login             \033[0m"
-echo -e "\033[0;34m╚============================================╝\033[0m"
+echo -e "$COLOR1╔============================================╗\033[0m"
+echo -e "$COLOR1 ${COLBG1}           ${WH}${bold}Xray Vmess WS User Login         \033[0m"
+echo -e "$COLOR1╚============================================╝\033[0m"
 for akun in "${data[@]}"
 do
 if [[ -z "$akun" ]]; then
@@ -42,7 +49,7 @@ else
 jum2=$(cat /tmp/ipvmess.txt | nl)
 echo "User : $akun";
 echo "$jum2";
-echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "$COLOR1================================================\033[0m"
 fi
 rm -rf /tmp/ipvmess.txt
 rm -rf /tmp/other.txt
