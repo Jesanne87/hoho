@@ -5,6 +5,14 @@
 # Auther  : JsPhantom
 # (C) Copyright 2023
 # =========================================
+###########- COLOR CODE -##############
+colornow=$(cat /etc/JsPhantom/theme/color.conf)
+NC="\e[0m"
+RED="\033[0;31m" 
+COLOR1="$(cat /etc/JsPhantom/theme/$colornow | grep -w "TEXT" | cut -d: -f2|sed 's/ //g')"
+COLBG1="$(cat /etc/JsPhantom/theme/$colornow | grep -w "BG" | cut -d: -f2|sed 's/ //g')"   
+WH='\033[1;37m'                 
+###########- END COLOR CODE -##########
 clear
 red='\e[1;31m'
 green='\e[0;32m'
@@ -15,9 +23,9 @@ NC='\e[0m'
 MYIP=$(wget -qO- ipv4.icanhazip.com);
 NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/usr/local/etc/xray/trojan.json")
         if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
-                echo -e "\033[0;34m╔============================================╗\033[0m"
-                echo -e "\e[0;35m       Check XRAY Trojan TCP Config   \e[0m"
-                echo -e "\033[0;34m╚============================================╝\033[0m"
+                echo -e "$COLOR1╔============================================╗\033[0m"
+                echo -e "$COLOR1 ${COLBG1}    ${WH}   Check XRAY Trojan TCP Config         \e[0m"
+                echo -e "$COLOR1╚============================================╝\033[0m"
                 echo ""
                 echo "You have no existing clients!"
                 echo ""
@@ -25,11 +33,11 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/usr/local/etc/xray/trojan.json")
         fi
 
         echo -e "\033[0;34m╔============================================╗\033[0m"
-        echo -e "\e[0;35m       Check XRAY Trojan TCP Config   \e[0m"
+        echo -e "\e[0;35m ${COLBG1}    ${WH}   Check XRAY Trojan TCP Config         \e[0m"
         echo -e "\033[0;34m╚============================================╝\033[0m"
         echo " Select the existing client to view the config"
         echo " Press CTRL+C to return"
-        echo -e "\033[0;34m==============================================\033[0m"
+        echo -e " $COLOR1==============================================\033[0m"
         echo "     No  Expired   User"
         grep -E "^### " "/usr/local/etc/xray/trojan.json" | cut -d ' ' -f 2-3 | nl -s ') '
         until [[ ${CLIENT_NUMBER} -ge 1 && ${CLIENT_NUMBER} -le ${NUMBER_OF_CLIENTS} ]]; do
@@ -66,7 +74,7 @@ hariini=`date -d "0 days" +"%Y-%m-%d"`
 trojanlink="trojan://${uuid}@${sts}${domain}:443?security=tls&type=tcp&allowInsecure=1&sni=${sni}#XRAY_TROJAN_TCP_${user}"
 clear
 echo -e ""
-echo -e "═══[XRAY TROJAN TCP]═══"
+echo -e "$COLOR1===================${NC}[XRAY TROJAN TCP]$COLOR1===================${NC}"
 echo -e "Remarks           : ${user}"
 echo -e "Domain            : ${domain}"
 echo -e "Port              : 443"
@@ -74,14 +82,14 @@ echo -e "Key               : ${uuid}"
 echo -e "Network           : TCP"
 echo -e "Security          : TLS"
 echo -e "AllowInsecure     : True"
-echo -e "═══════════════════"
+echo -e "$COLOR1===================${NC}"
 echo -e "Link XRAY Trojan  : ${trojanlink}"
-echo -e "═══════════════════"
+echo -e "$COLOR1===================${NC}"
 echo -e "YAML XRAY Trojan  : http://${MYIP}:81/$user-TRTCP.yaml"
-echo -e "═══════════════════"
+echo -e "$COLOR1===================${NC}"
 echo -e "Created On        : $hariini"
 echo -e "Expired On        : $exp"
-echo -e "═══════════════════"
+echo -e "$COLOR1===================${NC}"
 echo -e ""
 echo -e "Autoscript By JsPhantom"
 echo -e ""
