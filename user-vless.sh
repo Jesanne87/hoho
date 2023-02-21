@@ -24,7 +24,7 @@ MYIP=$(wget -qO- ipv4.icanhazip.com);
 NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/usr/local/etc/xray/vless.json")
         if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
                 echo -e "$COLOR1╔============================================╗\033[0m"
-                echo -e "$COLOR1 ${COLBG1}        ${WH}Check XRAY Vless WS Config     \e[0m"
+                echo -e "$COLOR1 ${COLBG1}        ${WH}Check XRAY Vless WS Config          \e[0m"
                 echo -e "$COLOR1╚============================================╝\033[0m"
                 echo ""
                 echo "You have no existing clients!"
@@ -33,7 +33,7 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/usr/local/etc/xray/vless.json")
         fi
 
         echo -e "$COLOR1╔============================================╗\033[0m"
-        echo -e "$COLOR1 ${COLBG1}        ${WH}Check XRAY Vmess WS Config     \e[0m"
+        echo -e "$COLOR1 ${COLBG1}        ${WH}Check XRAY Vless WS Config          \e[0m"
         echo -e "$COLOR1╚============================================╝\033[0m"
         echo " Select the existing client to view the config"
         echo " Press CTRL+C to return"
@@ -76,7 +76,7 @@ vlesslink2="vless://${uuid}@${sts}${domain}:80?type=ws&encryption=none&security=
 
 clear
 echo -e ""
-echo -e "===================${NC}[${bold}XRAY VLESS WS]===================${NC}"
+echo -e "$COLOR1===================${NC}[${bold}XRAY VLESS WS]$COLOR1===================${NC}"
 echo -e "Remarks           : ${user}"
 echo -e "Domain            : ${domain}"
 echo -e "Port TLS          : 443"
