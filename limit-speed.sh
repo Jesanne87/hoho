@@ -65,7 +65,7 @@ clear
 echo -e "$COLOR1╔===========================================╗\033[0m"
 echo -e " $COLOR1${COLBG1}           ${WH}LIMIT BANDWITH SPEED            \033[0m"
 echo -e "$COLOR1╚===========================================╝\033[0m
-\e[1;31mLimit Bandwith Speed${NC} \e[1;33mJsPhantom\033[0m
+\e[1;31mLimit Bandwith Speed by${NC} \e[1;33mJsPhantom\033[0m
 \033[1;37mTelegram : https://t.me/JsPhantom / @JsPhantom\033[0m"
 echo ""
 echo -e "   Status : $sts"
