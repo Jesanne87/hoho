@@ -240,15 +240,15 @@ echo -e "$COLOR1╚======================================================╝\033
 echo ""
 echo -ne " ${bold}Select menu : "; read opt
 case $opt in
-01) clear ; menu-vless ; read -n1 -r -p "Press any key to continue..." ; menu ;;
-02) clear ; menu-ws ; read -n1 -r -p "Press any key to continue..." ; menu ;;
-03) clear ; menu-tr ; read -n1 -r -p "Press any key to continue..." ; menu ;;
-04) clear ; menu-xrt ; read -n1 -r -p "Press any key to continue..." ; menu ;;
-05) clear ; menu-xtr ; read -n1 -r -p "Press any key to continue..." ; menu ;;
-06) clear ; dnslimit ; echo "" ; menu ;;
-07) clear ; nf ; echo "" ; read -n1 -r -p "Press any key to continue..." ; menu ;;
-08) clear ; status ; read -n1 -r -p "Press any key to continue..." ; menu ;;
-09) clear ; certxray ; menu ;;
+1) clear ; menu-vless ; read -n1 -r -p "Press any key to continue..." ; menu ;;
+2) clear ; menu-ws ; read -n1 -r -p "Press any key to continue..." ; menu ;;
+3) clear ; menu-tr ; read -n1 -r -p "Press any key to continue..." ; menu ;;
+4) clear ; menu-xrt ; read -n1 -r -p "Press any key to continue..." ; menu ;;
+5) clear ; menu-xtr ; read -n1 -r -p "Press any key to continue..." ; menu ;;
+6) clear ; dnslimit ; echo "" ; menu ;;
+7) clear ; nf ; echo "" ; read -n1 -r -p "Press any key to continue..." ; menu ;;
+8) clear ; status ; read -n1 -r -p "Press any key to continue..." ; menu ;;
+9) clear ; certxray ; menu ;;
 10) clear ; limit ; echo "" ; menu ;;
 11) clear ; add-host ; menu ;;
 12) clear ; nfins-helium ; read -n1 -r -p "Press any key to continue..." ; menu ;;
