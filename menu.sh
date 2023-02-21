@@ -251,7 +251,7 @@ case $opt in
 9) clear ; certxray ; menu ;;
 10) clear ; limit ; echo "" ; menu ;;
 11) clear ; add-host ; menu ;;
-12) clear ; nfins-helium ; read -n1 -r -p "Press any key to continue..." ; menu ;;
+12) clear ; ins-helium ; read -n1 -r -p "Press any key to continue..." ; menu ;;
 13) clear ; helium ; menu ;;
 14) clear ; info ; read -n1 -r -p "Press any key to continue..." ; menu ;;
 15) clear ; restart ; menu ;;
