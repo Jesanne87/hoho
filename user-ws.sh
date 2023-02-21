@@ -5,6 +5,14 @@
 # Auther  : JsPhantom
 # (C) Copyright 2023
 # =========================================
+###########- COLOR CODE -##############
+colornow=$(cat /etc/JsPhantom/theme/color.conf)
+NC="\e[0m"
+RED="\033[0;31m" 
+COLOR1="$(cat /etc/JsPhantom/theme/$colornow | grep -w "TEXT" | cut -d: -f2|sed 's/ //g')"
+COLBG1="$(cat /etc/JsPhantom/theme/$colornow | grep -w "BG" | cut -d: -f2|sed 's/ //g')"   
+WH='\033[1;37m'                 
+###########- END COLOR CODE -##########
 clear
 red='\e[1;31m'
 green='\e[0;32m'
@@ -15,21 +23,21 @@ NC='\e[0m'
 MYIP=$(wget -qO- ipv4.icanhazip.com);
 NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/usr/local/etc/xray/config.json")
         if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
-                echo -e "\033[0;34m╔============================================╗\033[0m"
-                echo -e "\e[0;35m        Check XRAY Vmess WS Config     \e[0m"
-                echo -e "\033[0;34m╚============================================╝\033[0m"
+                echo -e "$COLOR1╔============================================╗\033[0m"
+                echo -e "$COLOR1 ${COLBG1}       ${WH}Check XRAY Vmess WS Config           \e[0m"
+                echo -e "$COLOR1╚============================================╝\033[0m"
                 echo ""
                 echo "You have no existing clients!"
                 clear
                 exit 1
         fi
 
-        echo -e "\033[0;34m╔============================================╗\033[0m"
-        echo -e "\e[0;35m        Check XRAY Vmess WS Config     \e[0m"
-        echo -e "\033[0;34m╚============================================╝\033[0m"
+        echo -e "$COLOR1╔============================================╗\033[0m"
+        echo -e "$COLOR1 ${COLBG1}       ${WH}Check XRAY Vmess WS Config           \e[0m"
+        echo -e "$COLOR1╚============================================╝\033[0m"
         echo " Select the existing client to view the config"
         echo " Press CTRL+C to return"
-		echo -e "\033[0;34m============================================\033[0m"
+		echo -e "============================================\033[0m"
         echo "     No  Expired   User"
         grep -E "^### " "/usr/local/etc/xray/config.json" | cut -d ' ' -f 2-3 | nl -s ') '
         until [[ ${CLIENT_NUMBER} -ge 1 && ${CLIENT_NUMBER} -le ${NUMBER_OF_CLIENTS} ]]; do
@@ -52,7 +60,7 @@ vmesslink1="vmess://$(base64 -w 0 /usr/local/etc/xray/$user-tls.json)"
 vmesslink2="vmess://$(base64 -w 0 /usr/local/etc/xray/$user-none.json)"
 clear
 echo -e ""
-echo -e "═══[XRAY VMESS WS]════"
+echo -e "$COLOR1===================${NC}[Xray Vmess WS]$COLOR1===================${NC}"
 echo -e "Remarks           : ${user}"
 echo -e "Domain            : ${domain}"
 echo -e "Port TLS          : 443"
@@ -63,18 +71,18 @@ echo -e "Security          : Auto"
 echo -e "Network           : WS"
 echo -e "Path TLS          : /vmess-tls"
 echo -e "Path NTLS         : /vmess-ntls"
-echo -e "═══════════════════"
+echo -e "$COLOR1===================${NC}"
 echo -e "Link WS TLS       : ${vmesslink1}"
-echo -e "═══════════════════"
+echo -e "$COLOR1===================${NC}"
 echo -e "Link WS None TLS  : ${vmesslink2}"
-echo -e "═══════════════════"
+echo -e "===================${NC}"
 echo -e "YAML WS TLS       : http://${MYIP}:81/$user-VMESSTLS.yaml"
-echo -e "═══════════════════"
+echo -e "$COLOR1===================${NC}"
 echo -e "YAML WS None TLS  : http://${MYIP}:81/$user-VMESSNTLS.yaml"
-echo -e "═══════════════════"
+echo -e "$COLOR1===================${NC}"
 echo -e "Created On        : $hariini"
 echo -e "Expired On        : $exp"
-echo -e "═══════════════════"
+echo -e "$COLOR1===================${NC}"
 echo -e ""
 echo -e "Autoscript By JsPhantom"
 echo -e ""
