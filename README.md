@@ -11,8 +11,8 @@
   
 ## &#128055; XRAY MULTIPORT WEBSOCKET AUTOSCRIPT DETAILS &#128055;
 
-#Tgh di buat hehe
-## Register IP (PM your username & IP):<a href="https://t.me/jsPhantom" target=”_blank”><img src="https://img.shields.io/static/v1?style=for-the-badge&logo=Telegram&label=Telegram&message=Click%20Here&color=blue"></a><br>
+###Tgh di buat hehe
+
 
 
 ## &#128073; Root Access <br>
