@@ -25,7 +25,7 @@ IPVPS=$(curl -s icanhazip.com/ip )
 NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/usr/local/etc/xray/trojanws.json")
         if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
                 echo -e "$COLOR1╔============================================╗\033[0m"
-                echo -e "$COLOR1 ${COLBG1}        ${WH}Check Xray Trojan WS Config    \e[0m"
+                echo -e "$COLOR1 ${COLBG1}        ${WH}Check Xray Trojan WS Config         \e[0m"
                 echo -e "$COLOR1╚============================================╝\033[0m"
                 echo ""
                 echo "You have no existing clients!"
@@ -34,7 +34,7 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/usr/local/etc/xray/trojanws.json")
         fi
 
         echo -e "$COLOR1╔============================================╗\033[0m"
-        echo -e "$COLOR1 ${COLBG1}       ${WH}Check XRAY Trojan WS Config    \e[0m"
+        echo -e "$COLOR1 ${COLBG1}       ${WH}Check XRAY Trojan WS Config         \e[0m"
         echo -e "$COLOR1╚============================================╝\033[0m"
         echo " Select the existing client to view the config"
         echo " Press CTRL+C to return"
