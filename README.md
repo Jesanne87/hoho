@@ -11,29 +11,7 @@
   
 ## &#128055; XRAY MULTIPORT WEBSOCKET AUTOSCRIPT DETAILS &#128055;
 
-[ XRAY SERVICES ] <br>
-<br>
-✅ XRAY VMESS WEBSOCKET TLS & NON-TLS 443/80<br>
-✅ XRAY VLESS WEBSOCKET TLS & NON-TLS 443/80<br>
-✅ XRAY TROJAN WEBSOCKET TLS & NON-TLS 443/80<br>
-✅ XRAY TROJAN TCP XTLS 443<br>
-✅ XRAY TROJAN TCP TLS 443<br>
-✅ TROJAN GO WS 8080<br>
-<br>
-[ OTHER SERVICES ] <br>
-<br>
-✅ CHANGE PORT FOR TROJAN GO <br>
-✅ BANDWITH MONITOR <br>
-✅ RAM MONITOR <br>
-✅ YAML LINK <br>
-✅ DNS CHANGER <br>
-✅ NETFLIX REGION CHECKER <br>
-✅ CHECK LOGIN USER <br>
-✅ CHECK CREATED CONFIG <br>
-✅ AUTOMATIC CLEAR LOG <br>
-✅ AUTOMATIC VPS REBOOT <br>
-✅ BACKUP & RESTORE <br></br>
-
+#Tgh di buat hehe
 ## Register IP (PM your username & IP):<a href="https://t.me/jsPhantom" target=”_blank”><img src="https://img.shields.io/static/v1?style=for-the-badge&logo=Telegram&label=Telegram&message=Click%20Here&color=blue"></a><br>
 
 
