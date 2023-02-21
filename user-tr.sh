@@ -5,6 +5,14 @@
 # Auther  : JsPhantom
 # (C) Copyright 2023
 # =========================================
+###########- COLOR CODE -##############
+colornow=$(cat /etc/JsPhantom/theme/color.conf)
+NC="\e[0m"
+RED="\033[0;31m" 
+COLOR1="$(cat /etc/JsPhantom/theme/$colornow | grep -w "TEXT" | cut -d: -f2|sed 's/ //g')"
+COLBG1="$(cat /etc/JsPhantom/theme/$colornow | grep -w "BG" | cut -d: -f2|sed 's/ //g')"   
+WH='\033[1;37m'                 
+###########- END COLOR CODE -##########
 clear
 red='\e[1;31m'
 green='\e[0;32m'
@@ -84,7 +92,7 @@ echo -e "Path TLS          : /trojan-tls"
 echo -e "Path NTLS         : /trojan-ntls"
 echo -e "$COLOR1===================${NC}"
 echo -e "Link WS TLS       : ${trojanlink1}"
-echo -e "═══════════════════"
+echo -e "$COLOR1===================${NC}"
 echo -e "Link WS None TLS  : ${trojanlink2}"
 echo -e "$COLOR1===================${NC}"
 echo -e "YAML WS TLS       : http://${MYIP}:81/$user-TRTLS.yaml"
