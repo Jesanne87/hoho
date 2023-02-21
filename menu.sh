@@ -245,7 +245,7 @@ case $opt in
 3) clear ; menu-tr ; read -n1 -r -p "Press any key to continue..." ; menu ;;
 4) clear ; menu-xrt ; read -n1 -r -p "Press any key to continue..." ; menu ;;
 5) clear ; menu-xtr ; read -n1 -r -p "Press any key to continue..." ; menu ;;
-6) clear ; dnslimit ; echo "" ; menu ;;
+6) clear ; dns ; echo "" ; menu ;;
 7) clear ; nf ; echo "" ; read -n1 -r -p "Press any key to continue..." ; menu ;;
 8) clear ; status ; read -n1 -r -p "Press any key to continue..." ; menu ;;
 9) clear ; certxray ; menu ;;
