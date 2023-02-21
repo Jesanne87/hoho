@@ -192,7 +192,7 @@ service cron restart
 
 clear
 echo -e ""
-echo -e "$COLOR1===================${NC}[TRIAL XRAY TROJAN WS]$COLOR1===================${NC}"
+echo -e "$COLOR1===================${NC}[Trial Xray Trojan WS]$COLOR1===================${NC}"
 echo -e "Remarks           : ${user}"
 echo -e "Domain            : ${domain}"
 echo -e "Port TLS          : 443"
