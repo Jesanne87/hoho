@@ -5,22 +5,30 @@
 # Auther  : JsPhantom
 # (C) Copyright 2023
 # =========================================
+###########- COLOR CODE -##############
+colornow=$(cat /etc/JsPhantom/theme/color.conf)
+NC="\e[0m"
+RED="\033[0;31m" 
+COLOR1="$(cat /etc/JsPhantom/theme/$colornow | grep -w "TEXT" | cut -d: -f2|sed 's/ //g')"
+COLBG1="$(cat /etc/JsPhantom/theme/$colornow | grep -w "BG" | cut -d: -f2|sed 's/ //g')"   
+WH='\033[1;37m'                 
+###########- END COLOR CODE -##########
 P='\e[0;35m'
 B='\033[0;36m'
 N='\e[0m'
 clear
-echo -e "\e[36m╔============================================╗\033[0m"
-echo -e " \e[0;35m             XRAY VMESS WS MENU             \033[0m"
-echo -e "\e[36m╚============================================╝\033[0m
+echo -e "$COLOR1╔============================================╗\033[0m"
+echo -e " $COLOR1${COLBG1}            ${WH}XRAY VMESS WS MENU              \033[0m"
+echo -e "$COLOR1╚============================================╝\033[0m"
 
- [\033[1;36m•1 \033[0m]  Add XRAY Vmess WS Account
- [\033[1;36m•2 \033[0m]  Add Trial XRAY Vmess WS Account
- [\033[1;36m•3 \033[0m]  Check User Login XRAY Vmess WS
- [\033[1;36m•4 \033[0m]  Delete XRAY Vmess WS Account
- [\033[1;36m•5 \033[0m]  Renew XRAY Vmess WS Account
- [\033[1;36m•6 \033[0m]  Check XRAY Vmess WS Config
+echo -e " ${WH}[${COLOR1}01${WH}]$NC ${COLOR1}•${WH}Add XRAY Vmess WS Account\033[0m"
+echo -e " ${WH}[${COLOR1}02${WH}]$NC ${COLOR1}•${WH}Add Trial XRAY Vmess WS Account\033[0m"
+echo -e " ${WH}[${COLOR1}03${WH}]$NC ${COLOR1}•${WH}Check User Login XRAY Vmess WS\033[0m"
+echo -e " ${WH}[${COLOR1}04${WH}]$NC ${COLOR1}•${WH}Delete XRAY Vmess WS Account\033[0m"
+echo -e " ${WH}[${COLOR1}05${WH}]$NC ${COLOR1}•${WH}Renew XRAY Vmess WS Account\033[0m"
+echo -e " ${WH}[${COLOR1}06${WH}]$NC ${COLOR1}•${WH}Check XRAY Vmess WS Config\033[0m"
 
- [\033[1;36m•0 \033[0m]  Back To Main Menu"
+echo -e " ${WH}[${COLOR1}00${WH}]$NC ${COLOR1}•Back To Main Menu\033[0m"
 echo ""
 echo -e " \033[1;37mPress [ Ctrl+C ] • To-Exit-Script\033[0m"
 echo ""
