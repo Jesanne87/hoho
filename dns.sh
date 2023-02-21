@@ -5,6 +5,15 @@
 # Auther  : JsPhantom
 # (C) Copyright 2023
 # =========================================
+###########- COLOR CODE -##############
+colornow=$(cat /etc/JsPhantom/theme/color.conf)
+export NC="\e[0m"
+export YELLOW='\033[0;33m';
+export RED="\033[0;31m" 
+export COLOR1="$(cat /etc/JsPhantom/theme/$colornow | grep -w "TEXT" | cut -d: -f2|sed 's/ //g')"
+export COLBG1="$(cat /etc/JsPhantom/theme/$colornow | grep -w "BG" | cut -d: -f2|sed 's/ //g')" 
+WH='\033[1;37m'                   
+###########- END COLOR CODE -##########
 yell='\e[1;33m'
 red='\e[1;31m'
 P='\e[0;35m'
@@ -13,9 +22,9 @@ G='\033[0;32m'
 NC='\e[0m'
 N='\e[0m'
 clear
-echo -e "\e[36m╔===========================================╗\033[0m"
-echo -e " \e[0;35m                ${bold}DNS Changer                \033[0m"
-echo -e "\e[36m╚===========================================╝\033[0m
+echo -e "$COLOR1\e[36m╔===========================================╗\033[0m"
+echo -e " $COLOR1${COLBG1}              ${WH} ${bold}DNS Changer                 \033[0m"
+echo -e "$COLOR1╚===========================================╝\033[0m
 \033[0;32mDNS Changer By${NC} \e[1;33mJsPhantom\033[0m
 \033[1;37mTelegram : https://t.me/JsPhantom / @JsPhantom\033[0m"
 dnsfile="/root/dns"
