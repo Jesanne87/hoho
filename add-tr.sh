@@ -5,6 +5,14 @@
 # Auther  : JsPhantom
 # (C) Copyright 2023
 # =========================================
+###########- COLOR CODE -##############
+colornow=$(cat /etc/JsPhantom/theme/color.conf)
+NC="\e[0m"
+RED="\033[0;31m" 
+COLOR1="$(cat /etc/JsPhantom/theme/$colornow | grep -w "TEXT" | cut -d: -f2|sed 's/ //g')"
+COLBG1="$(cat /etc/JsPhantom/theme/$colornow | grep -w "BG" | cut -d: -f2|sed 's/ //g')"   
+WH='\033[1;37m'                 
+###########- END COLOR CODE -##########
 clear
 dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
@@ -91,22 +99,22 @@ clear
 domain=$(cat /root/domain)
 MYIP2=$(wget -qO- ipv4.icanhazip.com);
 until [[ $user =~ ^[a-zA-Z0-9_]+$ && ${user_EXISTS} == '0' ]]; do
-             echo -e "\033[0;34m╔============================================╗\033[0m"
-            echo -e "\033[35;1m          ${bold}Add XRAY Trojan WS Account    \033[0m"
-            echo -e "\033[0;34m╚============================================╝\033[0m"
+             echo -e "$COLOR1╔============================================╗\033[0m"
+            echo -e "$COLOR1 ${COLBG1}        ${WH}  Add XRAY Trojan WS Account        \033[0m"
+            echo -e "$COLOR1╚============================================╝\033[0m"
 
 		read -rp "Username : " -e user
 		user_EXISTS=$(grep -w $user /usr/local/etc/xray/trojanws.json | wc -l)
 
 		if [[ ${user_EXISTS} == '1' ]]; then
 clear
-	 echo -e "\033[0;34m╔============================================╗\033[0m"
-            echo -e "\033[35;1m     ${bold}Add XRAY Trojan WS Account    \033[0m"
-            echo -e "\033[0;34m╚============================================╝\033[0m"
+	 echo -e "$COLOR1╔============================================╗\033[0m"
+            echo -e "$COLOR1${COLBG1}    ${WH}  Add XRAY Trojan WS Account        \033[0m"
+            echo -e "$COLOR1╚============================================╝\033[0m"
 			echo ""
 			echo "A client with the specified name was already created, please choose another name."
 			echo ""
-			echo -e "\033[0;34m────────────────────────────────────────────────\033[0m"
+			echo -e "$COLOR1================================================\033[0m"
 			read -n 1 -s -r -p "Press any key to back on menu"
 			menu
 		fi
@@ -302,7 +310,7 @@ EOF
 
 clear
 echo -e ""
-echo -e "═════[${bold}Xray Trojan TLS]═════"
+echo -e "$COLOR1===================${NC}[${bold}Xray Trojan TLS]$COLOR1===================${NC}"
 echo -e "Remarks           : ${user}"
 echo -e "Domain            : ${domain}"
 echo -e "IP Address        : $IPVPS"
@@ -314,16 +322,16 @@ echo -e "Encryption        : None"
 echo -e "Network           : WS"
 echo -e "Path TLS          : /trojan-tls"
 echo -e "Path NTLS         : /trojan-ntls"
-echo -e "═══════════════════"
+echo -e "$COLOR1===================${NC}"
 echo -e "Link WS TLS       : ${trojanlink1}"
-echo -e "═══════════════════"
+echo -e "$COLOR1===================${NC}"
 echo -e "Link WS None TLS  : ${trojanlink2}"
-echo -e "═══════════════════"
+echo -e "$COLOR1===================${NC}"
 echo -e "Yaml ws TLS       : http://${MYIP2}:81/$user-TRTLS.yaml"
-echo -e "═══════════════════"
+echo -e "$COLOR1===================${NC}"
 echo -e "Created On        : $hariini"
 echo -e "Expired On        : $exp"
-echo -e "═══════════════════"
+echo -e "$COLOR1===================${NC}"
 echo -e ""
 echo -e "Autoscript By JsPhantom"
 echo -e ""
