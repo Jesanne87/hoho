@@ -57,4 +57,4 @@ if [[ $(cat /opt/.ver) = $serverV ]] > /dev/null 2>&1; then
        clear
        menu-xtr
     fi
-fi�
+fi
