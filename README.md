@@ -8,9 +8,8 @@
 
 
  
-  
-
-### Tgh di buat hehe
+ <p align="center">
+<img src="https://github.com/Jesanne87/examples/blob/main/Untitled%20design.jpg?r=82s" width="600" alt="Hayuk"/></a></p>
 
 
 
@@ -41,3 +40,6 @@ sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.di
   
 <p align="center">
 <img height=21 src="https://komarev.com/ghpvc/?username=Jesanne87">
+
+
+
