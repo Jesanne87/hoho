@@ -181,8 +181,8 @@ TEXT : \033[1;33m
 EOF
 #THEME MAGENTA
 cat <<EOF>> /etc/JsPhantom/theme/magenta
-BG : \E[40;1;43m
-TEXT : \033[1;33m
+BG : \E[40;1;45m
+TEXT : \033[1;0m
 EOF
 #THEME CYAN
 cat <<EOF>> /etc/JsPhantom/theme/cyan
@@ -234,14 +234,14 @@ rm -f /root/ssh-vpn.sh
 echo "1.0" > /home/ver
 clear
 echo ""
-echo -e "${RB}      .============================================.${NC}"
-echo -e "${RB}      |${NC}    ${CB}Installation Has Been Completed${NC}         ${RB}|${NC}"
-echo -e "${RB}      '============================================'${NC}"
-echo -e "${CB}————————————————————————————————————————————————————————${NC}"
+echo -e "${RB}      ╔════════════════════════════════════════════╗${NC}"
+echo -e "${RB}      ║${NC}    ${CB}Installation Has Been Completed${NC}         ${RB}║${NC}"
+echo -e "${RB}      ╚════════════════════════════════════════════╝${NC}"
+echo -e "${CB}❈————————————————————————————————————————————————————————❈${NC}"
 echo -e "      ${RB}🚀 ${NC} ${WB}Premium Autoscript By JsPhantom ${NC} ${RB}🚀 ${NC}"
-echo -e "${CB}————————————————————————————————————————————————————————${NC}"
-echo -e "                  ${WB}»»» Info Xray «««${NC}"
-echo -e "${CB}————————————————————————————————————————————————————————${NC}"
+echo -e "${CB}❈————————————————————————————————————————————————————————❈${NC}"
+echo -e "                  ${WB}»»»⁅ Info Xray ⁆«««${NC}"
+echo -e "${CB}❈————————————————————————————————————————————————————————❈${NC}"
 echo -e "  ${GB}✅${NC} ${YB}Xray Vmess Ws Tls : 443${NC}   ${WB}|${NC}  ${GB}✅${NC} ${YB}Websocket (CDN) TLS : 443${NC}"
 echo -e "  ${GB}✅${NC} ${YB}Xray Vless Ws Tls : 443${NC}   ${WB}|${NC}  ${GB}✅${NC} ${YB}Websocket (CDN) NTLS :80${NC}"
 echo -e "  ${GB}✅${NC} ${YB}Xray Trojan Ws Tls : 443${NC}  ${WB}|${NC}  ${GB}✅${NC} ${YB}TCP XTLS :443${NC}"
