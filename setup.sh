@@ -133,14 +133,13 @@ mkdir /var/lib/premium-script;
 mkdir /var/lib/crot-script;
 clear
 #echo -e "${red}♦️${NC} ${green}Established By JsPhantom 2023${NC} ${red}♦️${NC}"
-#DOWNLOAD SOURCE SCRIPT
-echo -e "${red}    ♦️${NC} ${green} \e[39;1mCUSTOM SETUP DOMAIN VPS     ${NC}"
-echo -e "${red}============================================\033[0m${NC}"
-echo "1. Use Domain From Script / Gunakan Domain Dari Script"
-echo "2. Choose Your Own Domain / Pilih Domain Sendiri"
-echo -e "${red}============================================\033[0m${NC}"
-read -rp "Choose Your Domain Installation : " dom 
-
+#DOWNLOAD SOURCE SCRIPT           
+echo -e "	             \e[0;32m »»»⁅ ${NC}\e[1;36mSetup Domain VPS ${NC}⁆\e[0;32m««««${NC}"
+echo -e " \e[0;35m❦════════════════════════════════════════════════════════════════❦${NC}"
+echo -e "       1 •Use Domain From Script / Gunakan Domain Dari Script${NC}"
+echo -e "       2 •Choose Your Own Domain / Pilih Domain Sendiri${NC}"
+echo -e " \e[0;35m❦════════════════════════════════════════════════════════════════❦${NC}"
+read -rp "             Choose Your Domain Installation : " dom 
 if test $dom -eq 1; then
 clear
 wget -q -O /root/cf.sh "https://${Server_URL}/cf.sh"
