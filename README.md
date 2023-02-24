@@ -13,12 +13,11 @@
 
 ### Moded Script
 ## Register IP (PM your username & IP):<a href="https://t.me/jsPhantom" target=”_blank”><img src="https://img.shields.io/static/v1?style=for-the-badge&logo=Telegram&label=Telegram&message=Click%20Here&color=blue"></a><br>
-## &#128073; Root Access <br>
+## &#128073; Untuk Root Access <br>
         
  ```html
 wget https://raw.githubusercontent.com/annelyah23/VPS-access-root/main/root7.sh && bash root7.sh
-
-  ```
+ ```
 
 ## &#128073; For Debian 10 Only For First Time Installation (Update Repo) <br>
  
