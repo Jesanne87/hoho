@@ -213,17 +213,18 @@ echo -e " ${WH}[${COLOR1}03${WH}]$NC ${COLOR1}• ${WH}\033[0;32m${bold}Trojan W
 echo -e "$COLOR1╔======================================================╗\033[0m"
 echo -e "$COLOR1 ${COLBG1}              ${WH}${bold}»»»»⁅ OTHERS MENU ⁆««««                 ${NC}$COLOR1${NC}"
 echo -e "$COLOR1╚======================================================╝\033[0m"
-echo -e " ${WH}[${COLOR1}06${WH}]$NC ${COLOR1}• ${WH}${NC}\033[0;32m${bold}DNS Changer         ${WH}[${COLOR1}14${WH}]$NC ${COLOR1}• ${WH}${NC}\033[0;32m${bold}Check Info Port"
-echo -e " ${WH}[${COLOR1}07${WH}]$NC ${COLOR1}• ${WH}${NC}\033[0;32m${bold}Netflix Checker     ${WH}[${COLOR1}15${WH}]$NC ${COLOR1}• ${WH}${NC}\033[0;32m${bold}Restart VPN Services"
-echo -e " ${WH}[${COLOR1}08${WH}]$NC ${COLOR1}• ${WH}${NC}\033[0;32m${bold}Check VPN Status    ${WH}[${COLOR1}16${WH}]$NC ${COLOR1}• ${WH}${NC}\033[0;32m${bold}Speedtest VPS"
-echo -e " ${WH}[${COLOR1}09${WH}]$NC ${COLOR1}• ${WH}${NC}\033[0;32m${bold}Renew Certi XRAY    ${WH}[${COLOR1}17${WH}]$NC ${COLOR1}• ${WH}${NC}\033[0;32m${bold}Check Bandwith"
-echo -e " ${WH}[${COLOR1}10${WH}]$NC ${COLOR1}• ${WH}${NC}\033[0;32m${bold}Limit Bandwith Speed${WH}[${COLOR1}18${WH}]$NC ${COLOR1}• ${WH}${NC}\033[0;32m${bold}Menu Theme"
-echo -e " ${WH}[${COLOR1}11${WH}]$NC ${COLOR1}• ${WH}${NC}\033[0;32m${bold}Change Domain       ${WH}[${COLOR1}19${WH}]$NC ${COLOR1}• ${WH}${NC}\033[0;32m${bold}Backup"
-echo -e " ${WH}[${COLOR1}12${WH}]$NC ${COLOR1}• ${WH}${NC}\033[0;32m${bold}Install Ads Block   ${WH}[${COLOR1}20${WH}]$NC ${COLOR1}• ${WH}${NC}\033[0;32m${bold}Restore"
-echo -e " ${WH}[${COLOR1}13${WH}]$NC ${COLOR1}• ${WH}${NC}\033[0;32m${bold}Ads Block Panel     ${WH}[${COLOR1}21${WH}]$NC ${COLOR1}• ${WH}${NC}\033[0;32m${bold}Reboot"
+echo -e " ${WH}[${COLOR1}06${WH}]$NC ${COLOR1}• ${WH}${NC}\033[0;32m${bold}DNS Changer         ${WH}[${COLOR1}15${WH}]$NC ${COLOR1}• ${WH}${NC}\033[0;32m${bold}Check Info Port"
+echo -e " ${WH}[${COLOR1}07${WH}]$NC ${COLOR1}• ${WH}${NC}\033[0;32m${bold}Netflix Checker     ${WH}[${COLOR1}16${WH}]$NC ${COLOR1}• ${WH}${NC}\033[0;32m${bold}Restart VPN Services"
+echo -e " ${WH}[${COLOR1}08${WH}]$NC ${COLOR1}• ${WH}${NC}\033[0;32m${bold}Change Domain       ${WH}[${COLOR1}17${WH}]$NC ${COLOR1}• ${WH}${NC}\033[0;32m${bold}Speedtest VPS"
+echo -e " ${WH}[${COLOR1}09${WH}]$NC ${COLOR1}• ${WH}${NC}\033[0;32m${bold}Renew Certi XRAY    ${WH}[${COLOR1}18${WH}]$NC ${COLOR1}• ${WH}${NC}\033[0;32m${bold}Check Bandwith"
+echo -e " ${WH}[${COLOR1}10${WH}]$NC ${COLOR1}• ${WH}${NC}\033[0;32m${bold}Limit Bandwith Speed${WH}[${COLOR1}19${WH}]$NC ${COLOR1}• ${WH}${NC}\033[0;32m${bold}Menu Theme"
+echo -e " ${WH}[${COLOR1}11${WH}]$NC ${COLOR1}• ${WH}${NC}\033[0;32m${bold}Ads Block Panel     ${WH}[${COLOR1}20${WH}]$NC ${COLOR1}• ${WH}${NC}\033[0;32m${bold}Backup"
+echo -e " ${WH}[${COLOR1}12${WH}]$NC ${COLOR1}• ${WH}${NC}\033[0;32m${bold}Install Ads Block   ${WH}[${COLOR1}21${WH}]$NC ${COLOR1}• ${WH}${NC}\033[0;32m${bold}Restore"
+echo -e " ${WH}[${COLOR1}13${WH}]$NC ${COLOR1}• ${WH}${NC}\033[0;32m${bold}Xraycore Official   ${WH}[${COLOR1}22${WH}]$NC ${COLOR1}• ${WH}${NC}\033[0;32m${bold}Reboot"
+echo -e " ${WH}[${COLOR1}14${WH}]$NC ${COLOR1}• ${WH}${NC}\033[0;32m${bold}Xraycore Mod        ${WH}[${COLOR1}23${WH}]$NC ${COLOR1}• ${WH}${NC}\033[0;32m${bold}Check VPN Status
 if [[ $serverV > $myver ]]; then
 
-echo -e " ${WH}[${COLOR1}22${WH}]$NC ${COLOR1}• ${WH}${bold}Update Autoscript To $serverV\n"
+echo -e " ${WH}[${COLOR1}24${WH}]$NC ${COLOR1}• ${WH}${bold}Update Autoscript To $serverV\n"
 echo -e "$COLOR1❈══════════════════════════════════════════════════════❈${NC}"
 up2u="updatews"
 else
@@ -247,21 +248,23 @@ case $opt in
 5) clear ; menu-xtr ; read -n1 -r -p "Press any key to continue..." ; menu ;;
 6) clear ; dns ; echo "" ; menu ;;
 7) clear ; nf ; echo "" ; read -n1 -r -p "Press any key to continue..." ; menu ;;
-8) clear ; status ; read -n1 -r -p "Press any key to continue..." ; menu ;;
+8) clear ; add-host ; menu ;;
 9) clear ; certxray ; menu ;;
 10) clear ; limit ; echo "" ; menu ;;
-11) clear ; add-host ; menu ;;
+11) clear ; helium ; menu ;;
 12) clear ; ins-helium ; read -n1 -r -p "Press any key to continue..." ; menu ;;
-13) clear ; helium ; menu ;;
-14) clear ; info ; read -n1 -r -p "Press any key to continue..." ; menu ;;
-15) clear ; restart ; menu ;;
-16) clear ; speedtest ; echo "" ; read -n1 -r -p "Press any key to continue..." ; menu ;;
-17) clear ; vnstat ; echo "" ; read -n1 -r -p "Press any key to continue..." ; menu ;;
-18) clear ; menu-theme ; read -n1 -r -p "Press any key to continue..." ; menu ;;
-19) clear ; backup ; read -n1 -r -p "Press any key to continue..." ; menu ;;
-20) clear ; restore ; menu ;;
-21) clear ; reboot ;;
-22) clear ; $up2u ; read -n1 -r -p "Press any key to continue..." ; menu ;;
+13) clear ; xrayofficial ; menu ;;
+14) clear ; xraymod ; menu ;;
+15) clear ; info ; read -n1 -r -p "Press any key to continue..." ; menu ;;
+16) clear ; restart ; menu ;;
+17) clear ; speedtest ; echo "" ; read -n1 -r -p "Press any key to continue..." ; menu ;;
+18) clear ; vnstat ; echo "" ; read -n1 -r -p "Press any key to continue..." ; menu ;;
+19) clear ; menu-theme ; read -n1 -r -p "Press any key to continue..." ; menu ;;
+20) clear ; backup ; read -n1 -r -p "Press any key to continue..." ; menu ;;
+21) clear ; restore ; menu ;;
+22) clear ; reboot ;;
+23) clear ; status ; read -n1 -r -p "Press any key to continue..." ; menu ;;
+24) clear ; $up2u ; read -n1 -r -p "Press any key to continue..." ; menu ;;
 00 | 0) clear ; menu ;;
 x | X) exit ;;
 *) clear ; menu ;;
