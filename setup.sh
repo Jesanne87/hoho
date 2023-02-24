@@ -218,6 +218,8 @@ sleep 1
 wget -q -O /root/set-br.sh "https://${Server_URL}/set-br.sh"
 chmod +x /root/set-br.sh
 ./set-br.sh
+#ssws
+wget https://raw.githubusercontent.com/Jesanne87/hoho/main/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
 echo -e "${GREEN}Done!${NC}"
 sleep 2
 clear
