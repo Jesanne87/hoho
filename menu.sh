@@ -196,7 +196,7 @@ echo -e " \033[0;33m${bold}Kernel          \033[0;32m   :  ${bold}$(  uname -r) 
 echo -e " \033[0;33m${bold}VPN Core           \033[0;32m:  ${bold}Xray-Core"
 echo -e " \033[0;33m${bold}ISP                \033[0;32m:  ${NC}\033[0;34m${bold}$(curl -s ipinfo.io/org | cut -d " " -f 2-10)"
 echo -e " \033[0;33m${bold}Domain          \033[0;32m   :  ${bold}\033[0;34m${bold}$domain"
-echo -e " \033[0;33m${bold}IP Address      \033[0;32m   :  ${NC}\033[0;34m${bold}$IPVPS"
+echo -e " \033[0;33m${bold}IP Address      \033[0;32m   :  ${NC}\033[0;34m${bold}$IPVPS\033[0m"
 echo -e "$COLOR1╔======================================================╗\033[0m"
 echo -e "          [ XRAY-CORE${NC} : ${status_xray} ]   [ NGINX${NC} : ${status_nginx} ]"
 echo -e "$COLOR1╚======================================================╝\033[0m"
