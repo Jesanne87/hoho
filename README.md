@@ -9,7 +9,7 @@
 
  
  <p align="center">
-<img src="https://github.com/Jesanne87/examples/blob/main/Untitled%20design.jpg?r=82s" width="600" alt="Hayuk"/></a></p>
+
 
 ### Moded Script
 ## Register IP (PM your username & IP):<a href="https://t.me/jsPhantom" target=”_blank”><img src="https://img.shields.io/static/v1?style=for-the-badge&logo=Telegram&label=Telegram&message=Click%20Here&color=blue"></a><br>
