@@ -6,8 +6,8 @@ echo ""
 echo -e "[ INFO ] Change Custom Xray-core"
 # Install New Xray Core Custom Method
 rm -rf /usr/local/bin/xray
-curl -sL "$xraycore_link" -o xray
-mv xray /usr/local/bin/xray
+curl -sL "$xraycore_link" -o xray.zip
+unzip -q xray.zip && rm -rf xray.zip
 chmod +x /usr/local/bin/xray
 systemctl restart xray
 sleep 1.5
