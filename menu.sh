@@ -169,10 +169,10 @@ echo -e "$COLOR1|${NC}\033[0;33m${bold} _  | / __${NC}\033[0;34m${bold}| |_) ${N
 echo -e "$COLOR1|${NC}\033[0;33m${bold}| |_| \__ ${NC}\033[0;34m${bold}\  __/${NC}${bold}| | | ${NC}\033[0;31m${bold}| (_| ${NC}${bold}| | | | ||${NC}\033[0;31m${bold} (_) ${NC}${bold}| | | | | |${NC}$COLOR1${bold}|${NC}"
 echo -e "$COLOR1|${NC}\033[0;33m${bold} \___/|___${NC}\033[0;34m${bold}/_|   ${NC}${bold}|_| |_${NC}\033[0;31m${bold}|\__,_${NC}${bold}|_| |_|\__${NC}\033[0;31m${bold}\___/${NC}${bold}|_| |_| |_|${NC}$COLOR1${bold}|${NC}"
 echo -e "$COLOR1╚======================================================╝${NC}"
-echo -e "$COLOR1 ${NC}          ${WH}Multiport Websocket By ${YELLOW}${bold}JsPhantom      ${NC}"
-echo -e "$COLOR1•======================================================•${NC}"
+echo -e "$COLOR1 ${NC}         ${WH}»»»»⁅ Multiport Websocket By ${YELLOW}${bold}JsPhantom ⁆««««     ${NC}"
+echo -e "$COLOR1❈══════════════════════════════════════════════════════❈${NC}"
 echo -e "$COLOR1╔======================================================╗\033[0m"
-echo -e "$COLOR1${NC} ${COLBG1}                    ${WH}INFO SERVER                       ${NC}$COLOR1${NC}"
+echo -e "$COLOR1${NC} ${COLBG1}                   ${WH}»»»»⁅ INFO SERVER ⁆««««                      ${NC}$COLOR1${NC}"
 echo -e "$COLOR1╚======================================================╝\033[0m"
 load_cpu=$(printf '%-3s' "$(top -bn1 | awk '/Cpu/ { cpu = "" 100 - $8 "%" }; END { print cpu }')")
 ram_used=$(free -m | grep Mem: | awk '{print $3}')
@@ -205,13 +205,13 @@ echo -e " ${bold}Daily Data Usage   :  ${bold}${yell}$daily_usage${N}"
 echo -e " ${bold}Monthly Data Usage :  ${bold}${yell}$monthly_usage${N}"
 echo -e "$COLOR1╚======================================================╝\033[0m"
 echo -e "$COLOR1╒======================================================╗\033[0m"
-echo -e "$COLOR1${NC} ${COLBG1}                     ${WH}XRAY MENU                        ${NC}$COLOR1${NC}"
+echo -e "$COLOR1${NC} ${COLBG1}                    ${WH}»»»»⁅ XRAY MENU ⁆««««                       ${NC}$COLOR1${NC}"
 echo -e "$COLOR1╚======================================================╝\033[0m"
 echo -e " ${WH}[${COLOR1}01${WH}]$NC ${COLOR1}• ${WH}\033[0;32m${bold}Vless WS Panel    ${WH}[${COLOR1}04${WH}]$NC ${COLOR1}• ${WH}\033[0;32m${bold}Trojan TCP XTLS Panel"
 echo -e " ${NC}${WH}[${COLOR1}02${WH}]$NC ${COLOR1}• ${WH}\033[0;32m${bold}Vmess WS Panel    ${WH}[${COLOR1}05${WH}]$NC ${COLOR1}• ${WH}\033[0;32m${bold}Trojan TCP Panel"     
 echo -e " ${WH}[${COLOR1}03${WH}]$NC ${COLOR1}• ${WH}\033[0;32m${bold}Trojan WS Panel"
 echo -e "$COLOR1╔======================================================╗\033[0m"
-echo -e "$COLOR1 ${COLBG1}                     ${WH}${bold}OTHERS MENU                      ${NC}$COLOR1${NC}"
+echo -e "$COLOR1 ${COLBG1}                    ${WH}${bold}»»»»⁅ OTHERS MENU ⁆««««                     ${NC}$COLOR1${NC}"
 echo -e "$COLOR1╚======================================================╝\033[0m"
 echo -e " ${WH}[${COLOR1}06${WH}]$NC ${COLOR1}• ${WH}${NC}\033[0;32m${bold}DNS Changer         ${WH}[${COLOR1}14${WH}]$NC ${COLOR1}• ${WH}${NC}\033[0;32m${bold}Check Info Port"
 echo -e " ${WH}[${COLOR1}07${WH}]$NC ${COLOR1}• ${WH}${NC}\033[0;32m${bold}Netflix Checker     ${WH}[${COLOR1}15${WH}]$NC ${COLOR1}• ${WH}${NC}\033[0;32m${bold}Restart VPN Services"
@@ -224,7 +224,7 @@ echo -e " ${WH}[${COLOR1}13${WH}]$NC ${COLOR1}• ${WH}${NC}\033[0;32m${bold}Ads
 if [[ $serverV > $myver ]]; then
 
 echo -e " ${WH}[${COLOR1}22${WH}]$NC ${COLOR1}• ${WH}${bold}Update Autoscript To $serverV\n"
-echo -e "$COLOR1•======================================================•${NC}"
+echo -e "$COLOR1❈══════════════════════════════════════════════════════❈${NC}"
 up2u="updatews"
 else
 up2u="menu"
