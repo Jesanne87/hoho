@@ -51,7 +51,7 @@ echo -e "  ${MB}♦️${NC} ${YB}${bold}Fail2Ban           ${GB}: ${bold}[ON]${N
 echo -e "  ${MB}♦️${NC} ${YB}${bold}Dflate             ${GB}: ${bold}[ON]${NC}"
 echo -e "  ${MB}♦️${NC} ${YB}${bold}IPtables           ${GB}: ${bold}[ON]${NC}"
 echo -e "  ${MB}♦️${NC} ${YB}${bold}Auto-Reboot        ${GB}: ${bold}[ON]${NC}"
-echo -e "  ${MB}♦️${NC} ${YB}${bold}IPV6               ${GB}: ${NC}${bold}${GB}[${NC}{RB}OFF${NC}{GB}]${NC}"
+echo -e "  ${MB}♦️${NC} ${YB}${bold}IPV6               ${GB}: ${NC}${bold}${GB}[${RB}OFF${NC}${GB}]${NC}"
 echo -e ""
 echo -e "  ${GB}✅${NC} ${YB}${bold}Autoreboot On 06.00 GMT +8${NC}"
 echo -e "  ${GB}✅${NC} ${YB}${bold}Backup & Restore VPS Data${NC}"
