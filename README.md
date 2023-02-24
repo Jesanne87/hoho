@@ -24,7 +24,7 @@ wget https://raw.githubusercontent.com/annelyah23/VPS-access-root/main/root7.sh 
  apt update -y && apt upgrade -y && apt dist-upgrade -y && reboot
   ```
  
-## Update OS Ubuntu 18.04lts
+## Update OS Ubuntu 18.04LTS
  ```html
  apt-get update && apt-get upgrade -y && apt dist-upgrade -y && update-grub && reboot
  ```
