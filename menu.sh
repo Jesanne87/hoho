@@ -221,7 +221,7 @@ echo -e " ${WH}[${COLOR1}10${WH}]$NC ${COLOR1}• ${WH}${NC}\033[0;32m${bold}Lim
 echo -e " ${WH}[${COLOR1}11${WH}]$NC ${COLOR1}• ${WH}${NC}\033[0;32m${bold}Ads Block Panel     ${WH}[${COLOR1}20${WH}]$NC ${COLOR1}• ${WH}${NC}\033[0;32m${bold}Backup"
 echo -e " ${WH}[${COLOR1}12${WH}]$NC ${COLOR1}• ${WH}${NC}\033[0;32m${bold}Install Ads Block   ${WH}[${COLOR1}21${WH}]$NC ${COLOR1}• ${WH}${NC}\033[0;32m${bold}Restore"
 echo -e " ${WH}[${COLOR1}13${WH}]$NC ${COLOR1}• ${WH}${NC}\033[0;32m${bold}Xraycore Official   ${WH}[${COLOR1}22${WH}]$NC ${COLOR1}• ${WH}${NC}\033[0;32m${bold}Reboot"
-echo -e " ${WH}[${COLOR1}14${WH}]$NC ${COLOR1}• ${WH}${NC}\033[0;32m${bold}Xraycore Mod        ${WH}[${COLOR1}23${WH}]$NC ${COLOR1}• ${WH}${NC}\033[0;32m${bold}Check VPN Status
+echo -e " ${WH}[${COLOR1}14${WH}]$NC ${COLOR1}• ${WH}${NC}\033[0;32m${bold}Xraycore Mod        ${WH}[${COLOR1}23${WH}]$NC ${COLOR1}• ${WH}${NC}\033[0;32m${bold}Check VPN Status"
 if [[ $serverV > $myver ]]; then
 
 echo -e " ${WH}[${COLOR1}24${WH}]$NC ${COLOR1}• ${WH}${bold}Update Autoscript To $serverV\n"
