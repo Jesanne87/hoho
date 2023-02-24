@@ -32,6 +32,8 @@ rm add-ws
 rm user-tr
 rm user-vless
 rm menu-theme
+rm xrayofficial
+rm xraymod
 wget -O nf "https://${Server_URL}/media.sh" && chmod +x nf
 wget -O ins-helium "https://${Server_URL}/ins-helium.sh" && chmod +x ins-helium
 wget -O menu "https://${Server_URL}/menu.sh" && chmod +x menu
@@ -43,6 +45,8 @@ wget -O add-ws "https://raw.githubusercontent.com/Jesanne87/hoho/main/add-ws.sh"
 wget -O user-tr "https://raw.githubusercontent.com/Jesanne87/hoho/main/user-tr.sh" && chmod +x user-tr
 wget -O user-vless "https://raw.githubusercontent.com/Jesanne87/hoho/main/user-vless.sh" && chmod +x user-vless
 wget -O menu-theme "https://raw.githubusercontent.com/Jesanne87/hoho/menu-theme.sh" && chmod +x menu-theme
+wget -O xraymod "https://raw.githubusercontent.com/Jesanne87/hoho/xraymod.sh" && chmod +x xraymod
+wget -O xrayofficial "https://raw.githubusercontent.com/Jesanne87/xrayofficial.sh" && chmod +x mxrayofficial
 echo ""
 echo -e "[${green}INFO${NC}] Successfully Install New Update File !"
 sleep 1
@@ -75,6 +79,8 @@ rm add-ws
 rm user-tr
 rm user-vless
 rm menu-theme
+rm xraymod
+rm xrayofficial
 wget -O nf "https://${Server_URL}/media.sh" && chmod +x nf
 wget -O ins-helium "https://${Server_URL}/ins-helium.sh" && chmod +x ins-helium
 wget -O menu "https://${Server_URL}/menu.sh" && chmod +x menu
@@ -86,6 +92,8 @@ wget -O add-ws "https://raw.githubusercontent.com/Jesanne87/hoho/main/add-ws.sh"
 wget -O user-tr "https://raw.githubusercontent.com/Jesanne87/hoho/main/user-tr.sh" && chmod +x user-tr
 wget -O user-vless "https://raw.githubusercontent.com/Jesanne87/hoho/main//user-vless.sh" && chmod +x user-vless
 wget -O menu-theme "https://raw.githubusercontent.com/Jesanne87/hoho/main/menu-theme.sh" && chmod +x menu-theme
+wget -O xraymod "https://raw.githubusercontent.com/Jesanne87/hoho/xraymod.sh" && chmod +x xraymod
+wget -O xrayofficial "https://raw.githubusercontent.com/Jesanne87/xrayofficial.sh" && chmod +x xrayofficial
 echo ""
 echo -e "[${green}INFO${NC}] Successfully Install New Update File !"
 sleep 1
