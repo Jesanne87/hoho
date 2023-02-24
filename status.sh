@@ -21,7 +21,7 @@ NC='\e[0m'
 clear
 echo -e ""
 echo -e "$COLOR1╔═══════════════════════════════════════════╗\033[0m"
-echo -e " $COLOR1${COLBG1}               ${WH}»»»»⁅ System Status ⁆««««               \033[0m"
+echo -e " $COLOR1${COLBG1}       ${WH}»»»»⁅ System Status ⁆««««           \033[0m"
 echo -e "$COLOR1╚═══════════════════════════════════════════╝\033[0m"
 echo ""
 status="$(systemctl show cron.service --no-page)"
