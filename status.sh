@@ -20,9 +20,9 @@ orange='\e[0;33m'
 NC='\e[0m'
 clear
 echo -e ""
-echo -e "$COLOR1╔============================================╗\033[0m"
-echo -e " $COLOR1${COLBG1}               ${WH}System Status                \033[0m"
-echo -e "$COLOR1╚============================================╝\033[0m"
+echo -e "$COLOR1╔═══════════════════════════════════════════╗\033[0m"
+echo -e " $COLOR1${COLBG1}               ${WH}»»»»⁅ System Status ⁆««««               \033[0m"
+echo -e "$COLOR1╚═══════════════════════════════════════════╝\033[0m"
 echo ""
 status="$(systemctl show cron.service --no-page)"
 status_text=$(echo "${status}" | grep 'ActiveState=' | cut -f2 -d=)
