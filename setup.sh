@@ -182,7 +182,7 @@ EOF
 #THEME MAGENTA
 cat <<EOF>> /etc/JsPhantom/theme/magenta
 BG : \E[40;1;45m
-TEXT : \033[1;0m
+TEXT : \033[1;40m
 EOF
 #THEME CYAN
 cat <<EOF>> /etc/JsPhantom/theme/cyan
