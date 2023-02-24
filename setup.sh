@@ -248,7 +248,7 @@ echo -e "  ${GB}✅${NC} ${YB}Xray Trojan Ws Tls : 443${NC}  ${WB}|${NC}  ${GB}�
 echo -e "  ${GB}✅${NC} ${YB}Trojan TCP XTLS : 443${NC}     ${WB}|${NC}  ${GB}✅${NC} ${YB}TCP TLS : 443${NC}"
 echo -e "  ${GB}✅${NC} ${YB}Trojan TCP : 443${NC}          ${WB}|${NC}"
 echo -e "${CB}❈══════════════════════════════════════════════════════❈${NC}"
-echo -e "           ${WB}»»»⁅ YAML Service Information «««${NC}          "
+echo -e "           ${WB}»»»⁅ YAML Service Information ⁆«««${NC}          "
 echo -e "${CB}❈══════════════════════════════════════════════════════❈${NC}"
 echo -e "  ${GB}✅${NC} ${YB}YAML XRAY VMESS WS${NC}"
 echo -e "  ${GB}✅${NC} ${YB}YAML XRAY VLESS WS${NC}"
