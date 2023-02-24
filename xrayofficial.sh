@@ -14,6 +14,7 @@ chmod +x /usr/local/bin/xray
 systemctl restart xray
 sleep 1.5
 echo -e "[ INFO ] Change Custom Xray-core done"
+echo -e "[ INFO ] Press NO if Get notify replace"
 echo ""
 echo -e "Back to menu in 1 sec "
 sleep 1
