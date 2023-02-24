@@ -169,7 +169,7 @@ echo -e "$COLOR1|${NC}\033[0;33m${bold} _  | / __${NC}\033[0;34m${bold}| |_) ${N
 echo -e "$COLOR1|${NC}\033[0;33m${bold}| |_| \__ ${NC}\033[0;34m${bold}\  __/${NC}${bold}| | | ${NC}\033[0;31m${bold}| (_| ${NC}${bold}| | | | ||${NC}\033[0;31m${bold} (_) ${NC}${bold}| | | | | |${NC}$COLOR1${bold}|${NC}"
 echo -e "$COLOR1|${NC}\033[0;33m${bold} \___/|___${NC}\033[0;34m${bold}/_|   ${NC}${bold}|_| |_${NC}\033[0;31m${bold}|\__,_${NC}${bold}|_| |_|\__${NC}\033[0;31m${bold}\___/${NC}${bold}|_| |_| |_|${NC}$COLOR1${bold}|${NC}"
 echo -e "$COLOR1╚======================================================╝${NC}"
-echo -e "$COLOR1 ${NC}         ${WH}»»»»⁅ Autoscript Moded By ${YELLOW}${bold}JsPhantom ⁆««««     ${NC}"
+echo -e "$COLOR1 ${NC}      ${WH}»»»»⁅ Autoscript Moded By ${YELLOW}${bold}JsPhantom ${NC}⁆««««     ${NC}"
 echo -e "$COLOR1❈══════════════════════════════════════════════════════❈${NC}"
 echo -e "$COLOR1╔======================================================╗\033[0m"
 echo -e "$COLOR1${NC} ${COLBG1}                   ${WH}»»»»⁅ INFO SERVER ⁆««««                      ${NC}$COLOR1${NC}"
