@@ -28,7 +28,7 @@ echo -e "$COLOR1❦—————❦————••————❦———�
 echo -e "$COLOR1❦—————❦————••————❦————••————❦————••————❦————••————❦————❦${NC}"
 echo -e "$COLOR1         ${NC} ❈ ${NC} ${WB}${bold}Premium Autoscript By JsPhantom ${NC} ${RB}❈ ${NC}"
 echo -e "$COLOR1❈══════════════════════════════════════════════════════❈${NC}"
-echo -e "                  ${WB»»»»⁅ ${bold}Info Xray ⁆««««${NC}"
+echo -e "                  ${WB}»»»»⁅ ${bold}Info Xray ⁆««««${NC}"
 echo -e "$COLOR1❈══════════════════════════════════════════════════════❈${NC}"
 echo -e "  ${GB}✅${NC} ${YB}${bold}Xray Vmess Ws Tls : 443${NC}   ${WB}|${NC}  ${GB}✅${NC} ${YB}${bold}Websocket (CDN) TLS : 443${NC}"
 echo -e "  ${GB}✅${NC} ${YB}${bold}Xray Vless Ws Tls : 443${NC}   ${WB}|${NC}  ${GB}✅${NC} ${YB}${bold}Websocket (CDN) NTLS :80${NC}"
