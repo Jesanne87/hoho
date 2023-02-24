@@ -47,8 +47,8 @@ wget -O user-tr "https://raw.githubusercontent.com/Jesanne87/hoho/main/user-tr.s
 wget -O user-vless "https://raw.githubusercontent.com/Jesanne87/hoho/main/user-vless.sh" && chmod +x user-vless
 wget -O menu-theme "https://raw.githubusercontent.com/Jesanne87/hoho/menu-theme.sh" && chmod +x menu-theme
 wget -O xraymod "https://raw.githubusercontent.com/Jesanne87/hoho/xraymod.sh" && chmod +x xraymod
-wget -O xrayofficial "https://raw.githubusercontent.com/Jesanne87/xrayofficial.sh" && chmod +x xrayofficial
-wget -O info "https://raw.githubusercontent.com/Jesanne87/info.sh" && chmod +x info
+wget -O xrayofficial "https://raw.githubusercontent.com/Jesanne87/hoho/main/xrayofficial.sh" && chmod +x xrayofficial
+wget -O info "https://raw.githubusercontent.com/Jesanne87/hoho/main/info.sh" && chmod +x info
 echo ""
 echo -e "[${green}INFO${NC}] Successfully Install New Update File !"
 sleep 1
@@ -96,8 +96,8 @@ wget -O user-tr "https://raw.githubusercontent.com/Jesanne87/hoho/main/user-tr.s
 wget -O user-vless "https://raw.githubusercontent.com/Jesanne87/hoho/main//user-vless.sh" && chmod +x user-vless
 wget -O menu-theme "https://raw.githubusercontent.com/Jesanne87/hoho/main/menu-theme.sh" && chmod +x menu-theme
 wget -O xraymod "https://raw.githubusercontent.com/Jesanne87/hoho/xraymod.sh" && chmod +x xraymod
-wget -O xrayofficial "https://raw.githubusercontent.com/Jesanne87/xrayofficial.sh" && chmod +x xrayofficial
-wget -O info "https://raw.githubusercontent.com/Jesanne87/info.sh" && chmod +x info
+wget -O xrayofficial "https://raw.githubusercontent.com/Jesanne87/hoho/main/xrayofficial.sh" && chmod +x xrayofficial
+wget -O info "https://raw.githubusercontent.com/Jesanne87/hoho/main/info.sh" && chmod +x info
 echo ""
 echo -e "[${green}INFO${NC}] Successfully Install New Update File !"
 sleep 1
