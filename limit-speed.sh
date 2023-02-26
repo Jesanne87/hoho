@@ -71,7 +71,7 @@ echo ""
 echo -e "   Status : $sts"
 echo -e " ${WH}[${COLOR1}01${WH}]$NC${COLOR1}•${WH}Start Limit\033[0m"
 echo -e " ${WH}[${COLOR1}02${WH}]$NC${COLOR1}•${WH}Stop Limit\033[0m"
-echo -e " ${WH}[${COLOR1}03${WH}]$NC${COLOR1}•Back To Main Menu\033[0m"
+echo -e " ${WH}[${COLOR1}03${WH}]$NC${COLOR1}•Back To Menu\033[0m"
 echo ""
 echo -e " \033[1;37mPress [ Ctrl+C ] • To-Exit-Script\033[0m"
 echo ""
@@ -81,7 +81,7 @@ start
 elif [[ "$num" = "2" ]]; then
 stop
 elif [[ "$num" = "3" ]]; then
-menu
+menu-other
 else
 clear
 echo " Please Enter The Correct Number!"
