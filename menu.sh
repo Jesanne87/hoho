@@ -196,6 +196,7 @@ echo -e " ${COLOR1}║${COLBG1}                   ${WH}»»»»[ MENU ]«««« 
 echo -e " ${COLOR1}╠══════════════════════════════════════════════════════╣${NC}"
 echo -e " "                                                      
 echo -e "           ${WH}[${COLOR1}01${WH}]${COLOR1}• ${WH}XRAY MENU    ${WH}[${COLOR1}02${WH}]${COLOR1}• ${WH}OTHER MENU${NC}"          
+if [[ $serverV > $myver ]]; then
 echo -e "           ${WH}[${COLOR1}03${WH}]${COLOR1}• ${RED}UPDATE AUTOSCRIPT TO ${GRN}$serverV${NC}"                  
 echo -e " "                                                      
 echo -e " ${COLOR1}╚══════════════════════════════════════════════════════╝${NC}"     
@@ -207,7 +208,6 @@ echo -e "   ${YLW}STATUS SCRIPT     ${NC}: ${GRN}Freemium${NC}"
 echo -e " ${COLOR1}╚══════════════════════════════════════════════════════╝${NC}"
 echo -e " ${COLOR1}❦————❦————••————❦————••————❦————••————❦————••————❦————❦${NC}"
 echo -e "              ${YLW}Type [ x ] To Exit From Menu${NC}"
-if [[ $serverV > $myver ]]; then
 up2u="updatews"
 else
 up2u="menu"
