@@ -17,7 +17,7 @@ NC='\033[0;37m'
 # ===================
 latest_version="$(curl -s https://api.github.com/repos/XTLS/Xray-core/releases | grep tag_name | sed -E 's/.*"v(.*)".*/\1/' | head -n 1)"
 xraycore_link="https://github.com/dharak36/Xray-core/releases/download/v1.0.0/xray.linux.64bit"
-echo -e "\e[32mloading...\e[0m"
+echo -e "     \e[32mLoading...\e[0m"
 echo ""
 echo -e "[ \033[0;34mINFO\033[0;37m ] Change Custom Xray-core"
 # Install New Xray Core Custom Method
@@ -29,6 +29,6 @@ systemctl restart xray
 sleep 1.5
 echo -e "[ INFO ] Change Custom Xray-core done"
 echo ""
-echo -e "Back to menu in 1 sec "
-sleep 1
-menu
+echo -e "Back to menu in 3 sec "
+sleep 3
+menu-other
