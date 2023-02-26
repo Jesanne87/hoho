@@ -34,9 +34,15 @@ echo -e " ${COLOR1}╚═══════════════════�
 echo ""
 echo -ne " ${bold}${GRN}Select menu ${NC}: "; read opt
 case $opt in
-01 | 1) clear ; menu-vless menu ;;
-02 | 2) clear ; menu-ws menu ;;
-03 | 3) clear ; menu-tr ;;
-04 | 4) clear ; menu-xrt ; menu ;;
-05 | 5) clear ; menu-xtr  menu ;;
-00 | 0) clear ; menu ;;
+01 | 1)menu-vless
+;;
+02 | 2)menu-ws
+;;
+03 | 3)menu-tr
+;;
+04 | 4)menu-xrt
+;;
+05 | 5)menu-xtr
+;;
+00 | 0)menu
+;;
