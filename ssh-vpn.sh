@@ -279,10 +279,10 @@ wget -O certxray "https://${Server_URL}/cert.sh"
 wget -O menu-theme "https://raw.githubusercontent.com/Jesanne87/hoho/main/menu-theme.sh"
 wget -O xrayofficial "https://raw.githubusercontent.com/Jesanne87/hoho/main/xrayofficial.sh"
 wget -O xraymod "https://raw.githubusercontent.com/Jesanne87/hoho/main/xraymod.sh"
-wget -O menu-xray "https://raw.githubusercontent.com/Jesanne87/hoho/main/menu-xray.sh"
-wget -O menu-other "https://raw.githubusercontent.com/Jesanne87/hoho/main/menu-other.sh"
-chmod +x menu-other
-chmod +x menu-xray
+#wget -O menu-xray "https://raw.githubusercontent.com/Jesanne87/hoho/main/menu-xray.sh"
+#wget -O menu-other "https://raw.githubusercontent.com/Jesanne87/hoho/main/menu-other.sh"
+#chmod +x menu-other
+#chmod +x menu-xray
 chmod +x xrayofficial
 chmod +x xraymod
 chmod +x menu-tr
