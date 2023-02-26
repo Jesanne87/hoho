@@ -17,7 +17,8 @@ rm -rf /usr/local/sbin/helium
 wget -q -O /usr/local/sbin/helium https://cdn.discordapp.com/attachments/1043809011474112566/1054014513428566016/helium.sh
 chmod +x /usr/local/sbin/helium
 helium
-
-fi
-	 read -n1 -r -p "Press any key to continue..."
-	 menu-other
+    echo -e "${green}Installation complete!!${NC}"
+    sleep 3
+    menu-other
+    ;;
+esac
