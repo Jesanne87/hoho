@@ -10,7 +10,7 @@ if [[ -e /usr/local/sbin/helium ]]; then
      echo -e "${green}Ads Block Already Install${NC}"
      echo ""
 	 read -n1 -r -p "Press any key to continue..."
-	 menu
+	 menu-other
 else
 
 rm -rf /usr/local/sbin/helium
@@ -19,3 +19,5 @@ chmod +x /usr/local/sbin/helium
 helium
 
 fi
+	 read -n1 -r -p "Press any key to continue..."
+	 menu-other
