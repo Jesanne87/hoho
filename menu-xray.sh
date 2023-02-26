@@ -46,3 +46,7 @@ case $opt in
 ;;
 00 | 0)menu
 ;;
+*)
+echo " Tolong masukkan nombor yang betul!!"
+;;
+esac
