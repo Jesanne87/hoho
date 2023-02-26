@@ -35,6 +35,8 @@ rm menu-theme
 rm xrayofficial
 rm xraymod
 rm info
+rm menu-other
+rm menu-xray
 wget -O nf "https://${Server_URL}/media.sh" && chmod +x nf
 wget -O ins-helium "https://${Server_URL}/ins-helium.sh" && chmod +x ins-helium
 wget -O menu "https://${Server_URL}/menu.sh" && chmod +x menu
@@ -49,6 +51,8 @@ wget -O menu-theme "https://raw.githubusercontent.com/Jesanne87/hoho/main/menu-t
 wget -O xraymod "https://raw.githubusercontent.com/Jesanne87/hoho/main/xraymod.sh" && chmod +x xraymod
 wget -O xrayofficial "https://raw.githubusercontent.com/Jesanne87/hoho/main/xrayofficial.sh" && chmod +x xrayofficial
 wget -O info "https://raw.githubusercontent.com/Jesanne87/hoho/main/info.sh" && chmod +x info
+wget -O menu-xray "https://raw.githubusercontent.com/Jesanne87/hoho/main/menu-xray.sh" && chmod +x menu-xray
+wget -O menu-other "https://raw.githubusercontent.com/Jesanne87/hoho/main/menu-other.sh" && chmod +x menu-other
 echo ""
 echo -e "[${green}INFO${NC}] Successfully Install New Update File !"
 sleep 1
@@ -84,6 +88,8 @@ rm menu-theme
 rm xraymod
 rm xrayofficial
 rm info
+rm menu-xray
+rm menu-other
 wget -O nf "https://${Server_URL}/media.sh" && chmod +x nf
 wget -O ins-helium "https://${Server_URL}/ins-helium.sh" && chmod +x ins-helium
 wget -O menu "https://${Server_URL}/menu.sh" && chmod +x menu
@@ -98,6 +104,8 @@ wget -O menu-theme "https://raw.githubusercontent.com/Jesanne87/hoho/main/menu-t
 wget -O xraymod "https://raw.githubusercontent.com/Jesanne87/hoho/main/xraymod.sh" && chmod +x xraymod
 wget -O xrayofficial "https://raw.githubusercontent.com/Jesanne87/hoho/main/xrayofficial.sh" && chmod +x xrayofficial
 wget -O info "https://raw.githubusercontent.com/Jesanne87/hoho/main/info.sh" && chmod +x info
+wget -O menu-xray "https://raw.githubusercontent.com/Jesanne87/hoho/main/menu-xray.sh" && chmod +x menu-xray
+wget -O menu-other "https://raw.githubusercontent.com/Jesanne87/hoho/main/menu-other.sh" && chmod +x menu-other
 echo ""
 echo -e "[${green}INFO${NC}] Successfully Install New Update File !"
 sleep 1
