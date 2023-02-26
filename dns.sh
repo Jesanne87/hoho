@@ -36,7 +36,7 @@ fi
  echo -e "[\033[1;36m•1 \033[0m]  \033[0;32mTemporary DNS\033[0m"
  echo -e "[\033[1;36m•2 \033[0m]  \033[0;32mPermanent DNS\033[0m"
  echo -e "[\033[1;36m•3 \033[0m]  \033[0;32mReset DNS To Default\033[0m"
- echo -e "[\033[1;36m•4 \033[0m]  \033[0;32mBack To Main Menu\033[0m"
+ echo -e "[\033[1;36m•4 \033[0m]  \033[0;32mBack To Menu\033[0m"
 echo ""
 echo -e "\033[1;37mPress [ Ctrl+C ] • To-Exit-Script\033[0m"
 echo ""
@@ -119,7 +119,7 @@ dns
 ;;
 4)
 clear
-menu
+menu-other
 ;;
 *)
 echo "Please enter an correct number"
