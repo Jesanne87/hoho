@@ -40,22 +40,45 @@ echo -e " ${COLOR1}╚═══════════════════�
 echo ""
 echo -ne " ${bold}Select menu : "; read opt
 case $opt in
-01 | 1 ) clear ; dns ; echo "" ; menu ;;
-02 | 2 ) clear ; nf ; echo "" ; read -n1 -r -p "Press any key to continue..." ; menu ;;
-03 | 3 ) clear ; add-host ; menu ;;
-04 | 4 ) clear ; certxray ; menu ;;
-05 ) clear ; limit ; echo "" ; menu ;;
-06 ) clear ; helium ; menu ;;
-07 ) clear ; ins-helium ; read -n1 -r -p "Press any key to continue..." ; menu ;;
-08 ) clear ; xrayofficial ; menu ;;
-09 ) clear ; xraymod ; menu ;;
-10 ) clear ; info ; read -n1 -r -p "Press any key to continue..." ; menu ;;
-11 ) clear ; restart ; menu ;;
-12 ) clear ; speedtest ; echo "" ; read -n1 -r -p "Press any key to continue..." ; menu ;;
-13 ) clear ; vnstat ; echo "" ; read -n1 -r -p "Press any key to continue..." ; menu ;;
-14 ) clear ; menu-theme ; read -n1 -r -p "Press any key to continue..." ; menu ;;
-15 ) clear ; backup ; read -n1 -r -p "Press any key to continue..." ; menu ;;
-16 ) clear ; restore ; menu ;;
-17 ) clear ; reboot ;;
-18 ) clear ; status ; read -n1 -r -p "Press any key to continue..." ; menu ;;
-00 | 0 ) clear ; menu ;;
+01 | 1 )dns
+;;
+02 | 2 )nf
+;;
+03 | 3 )add-host 
+;;
+04 | 4 )certxray
+;;
+05 | 5 )limit
+;;
+06 | 6 )helium 
+;;
+07 | 7 )ins-helium 
+;;
+08 | 8 )xrayofficial
+;;
+09 | 9 )xraymod
+;;
+10 )info 
+;;
+11 )restart
+;;
+12 )speedtest
+;;
+13 )vnstat
+;;
+14 )menu-theme 
+;;
+15 )backup
+;;
+16 )restore
+;;
+17 )reboot
+;;
+18 )status
+;;
+*)
+echo " Tolong masukkan nombor yang betul!!"
+    sleep 1
+    menu-other
+    ;;
+esac
