@@ -2,7 +2,7 @@
 # =========================================
 # Quick Setup | Script Setup Manager
 # Edition : Stable Edition V1.0
-# Auther  : Geo Project
+# Auther  : JsPhantom
 # (C) Copyright 2023
 # =========================================
 ###########- COLOR CODE -##############
@@ -34,9 +34,9 @@ echo -e " ${COLOR1}╚═══════════════════�
 echo ""
 echo -ne " ${bold}${GRN}Select menu ${NC}: "; read opt
 case $opt in
-01 | 1) clear ; menu-vless ; read -n1 -r -p "Press any key to continue..." ; menu ;;
-02 | 2) clear ; menu-ws ; read -n1 -r -p "Press any key to continue..." ; menu ;;
-03 | 3) clear ; menu-tr ; read -n1 -r -p "Press any key to continue..." ; menu ;;
-04 | 4) clear ; menu-xrt ; read -n1 -r -p "Press any key to continue..." ; menu ;;
-05 | 5) clear ; menu-xtr ; read -n1 -r -p "Press any key to continue..." ; menu ;;
+01 | 1) clear ; menu-vless menu ;;
+02 | 2) clear ; menu-ws menu ;;
+03 | 3) clear ; menu-tr ;;
+04 | 4) clear ; menu-xrt ; menu ;;
+05 | 5) clear ; menu-xtr  menu ;;
 00 | 0) clear ; menu ;;
