@@ -21,11 +21,11 @@ MYIP=$(curl -sS ipv4.icanhazip.com)
 NameUser=$(curl -sS https://raw.githubusercontent.com/annelyah23/IP/main/access | grep $MYIP | awk '{print $2}')
 
 clear
-echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
-echo -e "$COLOR1│${NC} ${COLBG1}             • BACKUP PANEL MENU •             ${NC} $COLOR1│$NC"
-echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
-echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}  [INFO] Create password for database"
+echo -e "$COLOR1╔════════════════════════════════════════════╗${NC}"
+echo -e "$COLOR1║${NC} ${COLBG1}             • BACKUP PANEL MENU •             ${NC} $COLOR1║$NC"
+echo -e "$COLOR1╚════════════════════════════════════════════╝${NC}"
+echo -e "$COLOR1╔════════════════════════════════════════════╗${NC}"
+echo -e "$COLOR1║${NC}  [INFO] Create password for database"
 read -rp "   [INFO] Enter password : " -e InputPass
 sleep 1
 if [[ -z $InputPass ]]; then
@@ -106,21 +106,21 @@ echo -e "$COLOR1│${NC}  [INFO] Generete Link Backup "
 echo -e "$COLOR1│${NC}"
 sleep 2
 echo -e "$COLOR1│${NC}  The following is a link to your vps data backup file.
-$COLOR1│${NC}  Your VPS IP $IP
-$COLOR1│${NC}
-$COLOR1│${NC}  $link
-$COLOR1│${NC}  save the link pliss!
-$COLOR1│${NC}
-$COLOR1│${NC}  If you want to restore data, please enter the link above.
-$COLOR1│${NC}  Thank You For Using Our Services"
+$COLOR1║${NC}  Your VPS IP $IP
+$COLOR1║${NC}
+$COLOR1║${NC}  $link
+$COLOR1║${NC}  save the link pliss!
+$COLOR1║${NC}
+$COLOR1║${NC}  If you want to restore data, please enter the link above.
+$COLOR1║${NC}  Thank You For Using Our Services"
 cd
 rm -rf /root/backup &> /dev/null
 rm -rf /root/user-backup &> /dev/null
 rm -f /root/$NameUser.zip &> /dev/null
-echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
-echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}              •   JsPhantom-VPN   •                "
-echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
+echo -e "$COLOR1╚════════════════════════════════════════════╝${NC}" 
+echo -e "$COLOR1╔════════════════════ BY ════════════════════╗${NC}"
+echo -e "$COLOR1║${NC}              •   JsPhantom-VPN   •                ║"
+echo -e "$COLOR1╚════════════════════════════════════════════╝${NC}" 
 echo
 read -n 1 -s -r -p "Press any key to back on menu"
 menu-other
