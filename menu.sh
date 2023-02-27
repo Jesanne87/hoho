@@ -168,9 +168,9 @@ IPVPS=$(curl -s icanhazip.com/ip )
 daily_usage=$(vnstat -d --oneline | awk -F\; '{print $6}' | sed 's/ //')
 monthly_usage=$(vnstat -m --oneline | awk -F\; '{print $11}' | sed 's/ //')
 echo -e " ${COLOR1}╔══════════════════════════════════════════════════════╗${NC}"
-echo -e " ${COLOR1}║   ${WH}───[ MULTIPORT WEBSOCKET MODED BY JsPhantom ]───   ${COLOR1}${NC}${COLOR1}║${NC}"
+echo -e " ${COLOR1}║       ${WH}───[ AutoScript MODED BY JsPhantom ]───        ${COLOR1}${NC}${COLOR1}║${NC}"
 echo -e " ${COLOR1}╚══════════════════════════════════════════════════════╝${NC}"
-echo -e "          [ XRAY-CORE : ${status_xray} ]   [ NGINX : ${status_nginx} ]${NC}"         
+echo -e "           [ XRAY-CORE : ${status_xray} ]   [ NGINX : ${status_nginx} ]${NC}"         
 echo -e " ${COLOR1}╔══════════════════════════════════════════════════════╗${NC}"
 echo -e " ${COLOR1}║           ${WH}────[ SERVER INFORMATION ]────             ${COLOR1}║${NC}"
 echo -e " ${COLOR1}╚══════════════════════════════════════════════════════╝"
