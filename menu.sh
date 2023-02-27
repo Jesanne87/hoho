@@ -214,10 +214,8 @@ case $opt in
 02 | 2) clear ; menu-other ;;
 03 | 3) clear ; $up2u ;;
 00 | 0) clear ; menu ;;
-x | X) exit
-*)
-echo " Tolong masukkan nombor yang betul!!"
+x | X)
+exit
+sleep 1
 esac
- sleep 1
-    menu
-    ;;
+menu
