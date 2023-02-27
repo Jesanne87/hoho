@@ -26,9 +26,9 @@ curl -sL "$xraycore_link" -o xray
 mv xray /usr/local/bin/xray
 chmod +x /usr/local/bin/xray
 systemctl restart xray
-sleep 1.5
+sleep 1
 echo -e "[ INFO ] Change Custom Xray-core done"
 echo ""
-echo -e "Back to menu in 3 sec "
-sleep 3
+echo -e "Back to menu in 1 sec "
+sleep 1
 menu-other
