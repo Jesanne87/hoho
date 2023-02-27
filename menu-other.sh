@@ -23,7 +23,7 @@ normal=$(tput sgr0)
 ###########- END COLOR CODE -##########
 clear
 echo -e " ${COLOR1}╔══════════════════════════════════════════════════════╗${NC}"
-echo -e " ${COLOR1}║                ${NC}${WH}───[ OTHER PANEL ]───                 ${COLOR1}║${NC}"
+echo -e " ${COLOR1}║                ${NC}${WH}───[ OTHER PANEL ]───                 ${NC}${COLOR1}║${NC}"
 echo -e " ${COLOR1}╠══════════════════════════════════════════════════════╣${NC}"
 echo -e " ${COLOR1}║                                                      ║${NC}"
 echo -e " ${COLOR1}║ ${NC}${WH}[${COLOR1}01${WH}]${COLOR1}• ${WH}${bold}DNS Changer          ${NC}${WH}[${COLOR1}10${WH}]${COLOR1}• ${WH}${bold}Check Info Port     ${NC}${COLOR1}║${NC}"
