@@ -23,22 +23,23 @@ normal=$(tput sgr0)
 ###########- END COLOR CODE -##########
 clear
 echo -e " ${COLOR1}╔══════════════════════════════════════════════════════╗${NC}"
-echo -e " ${COLOR1}║${COLBG1}               ${NC}${WH}»»»»[ OTHER PANEL ]««««                ${COLOR1}║${NC}"
+echo -e " ${COLOR1}║                ${NC}${WH}───[ OTHER PANEL ]───                 ${COLOR1}║${NC}"
 echo -e " ${COLOR1}╠══════════════════════════════════════════════════════╣${NC}"
 echo -e " ${COLOR1}║                                                      ║${NC}"
-echo -e " ${COLOR1}║ ${NC}${WH}[${COLOR1}01${WH}]${COLOR1}• ${WH}${bold}DNS Changer          ${NC}${WH}[${COLOR1}10]${COLOR1}• ${WH}${bold}Check Info Port     ${NC}${COLOR1}║${NC}"
-echo -e " ${COLOR1}║ ${NC}${WH}[${COLOR1}02${WH}]${COLOR1}• ${WH}${bold}Netflix Checker      ${NC}${WH}[${COLOR1}11]${COLOR1}• ${WH}${bold}Restart VPN Services${NC}${COLOR1}║${NC}"
-echo -e " ${COLOR1}║ ${NC}${WH}[${COLOR1}03${WH}]${COLOR1}• ${WH}${bold}Change Domain        ${NC}${WH}[${COLOR1}12]${COLOR1}• ${WH}${bold}Speedtest VPS       ${NC}${COLOR1}║${NC}"
-echo -e " ${COLOR1}║ ${NC}${WH}[${COLOR1}04${WH}]${COLOR1}• ${WH}${bold}Renew Certi XRAY     ${NC}${WH}[${COLOR1}13]${COLOR1}• ${WH}${bold}Check Bandwith      ${NC}${COLOR1}║${NC}" 
-echo -e " ${COLOR1}║ ${NC}${WH}[${COLOR1}05${WH}]${COLOR1}• ${WH}${bold}Limit Bandwith Speed ${NC}${WH}[${COLOR1}14]${COLOR1}• ${WH}${bold}Menu Theme          ${NC}${COLOR1}║${NC}"
-echo -e " ${COLOR1}║ ${NC}${WH}[${COLOR1}06${WH}]${COLOR1}• ${WH}${bold}Ads Block Panel      ${NC}${WH}[${COLOR1}15]${COLOR1}• ${WH}${bold}Backup              ${NC}${COLOR1}║${NC}"
-echo -e " ${COLOR1}║ ${NC}${WH}[${COLOR1}07${WH}]${COLOR1}• ${WH}${bold}Install Ads Block    ${NC}${WH}[${COLOR1}16]${COLOR1}• ${WH}${bold}Restore             ${NC}${COLOR1}║${NC}"
-echo -e " ${COLOR1}║ ${NC}${WH}[${COLOR1}08${WH}]${COLOR1}• ${WH}${bold}Xraycore Official    ${NC}${WH}[${COLOR1}17]${COLOR1}• ${WH}${bold}Reboot              ${NC}${COLOR1}║${NC}"
-echo -e " ${COLOR1}║ ${NC}${WH}[${COLOR1}09${WH}]${COLOR1}• ${WH}${bold}Xraycore Mod         ${NC}${WH}[${COLOR1}18]${COLOR1}• ${WH}${bold}Check VPN Status    ${NC}${COLOR1}║${NC}"
+echo -e " ${COLOR1}║ ${NC}${WH}[${COLOR1}01${WH}]${COLOR1}• ${WH}${bold}DNS Changer          ${NC}${WH}[${COLOR1}10${WH}]${COLOR1}• ${WH}${bold}Check Info Port     ${NC}${COLOR1}║${NC}"
+echo -e " ${COLOR1}║ ${NC}${WH}[${COLOR1}02${WH}]${COLOR1}• ${WH}${bold}Netflix Checker      ${NC}${WH}[${COLOR1}11${WH}]${COLOR1}• ${WH}${bold}Restart VPN Services${NC}${COLOR1}║${NC}"
+echo -e " ${COLOR1}║ ${NC}${WH}[${COLOR1}03${WH}]${COLOR1}• ${WH}${bold}Change Domain        ${NC}${WH}[${COLOR1}12${WH}]${COLOR1}• ${WH}${bold}Speedtest VPS       ${NC}${COLOR1}║${NC}"
+echo -e " ${COLOR1}║ ${NC}${WH}[${COLOR1}04${WH}]${COLOR1}• ${WH}${bold}Renew Certi XRAY     ${NC}${WH}[${COLOR1}13${WH}]${COLOR1}• ${WH}${bold}Check Bandwith      ${NC}${COLOR1}║${NC}" 
+echo -e " ${COLOR1}║ ${NC}${WH}[${COLOR1}05${WH}]${COLOR1}• ${WH}${bold}Limit Bandwith Speed ${NC}${WH}[${COLOR1}14${WH}]${COLOR1}• ${WH}${bold}Menu Theme          ${NC}${COLOR1}║${NC}"
+echo -e " ${COLOR1}║ ${NC}${WH}[${COLOR1}06${WH}]${COLOR1}• ${WH}${bold}Ads Block Panel      ${NC}${WH}[${COLOR1}15${WH}]${COLOR1}• ${WH}${bold}Backup              ${NC}${COLOR1}║${NC}"
+echo -e " ${COLOR1}║ ${NC}${WH}[${COLOR1}07${WH}]${COLOR1}• ${WH}${bold}Install Ads Block    ${NC}${WH}[${COLOR1}16${WH}]${COLOR1}• ${WH}${bold}Restore             ${NC}${COLOR1}║${NC}"
+echo -e " ${COLOR1}║ ${NC}${WH}[${COLOR1}08${WH}]${COLOR1}• ${WH}${bold}Xraycore Official    ${NC}${WH}[${COLOR1}17${WH}]${COLOR1}• ${WH}${bold}Reboot              ${NC}${COLOR1}║${NC}"
+echo -e " ${COLOR1}║ ${NC}${WH}[${COLOR1}09${WH}]${COLOR1}• ${WH}${bold}Xraycore Mod         ${NC}${WH}[${COLOR1}18${WH}]${COLOR1}• ${WH}${bold}Check VPN Status    ${NC}${COLOR1}║${NC}"
 echo -e " ${COLOR1}║                                                      ║${NC}"
 echo -e " ${COLOR1}╚══════════════════════════════════════════════════════╝${NC}" 
+echo -e "                ${COLOR1}Type ${RED}[ X ]${NC} ${COLOR1}Exit From Menu${NC}"
 echo ""
-echo -ne " ${bold}Select menu : "; read opt
+echo -ne " ${bold}${GRN}Select menu ${NC}: "; read opt
 case $opt in
 01 | 1 )dns
 ;;
@@ -75,6 +76,8 @@ case $opt in
 17 )reboot
 ;;
 18 )status
+;;
+x | X ) menu
 ;;
 *)
 echo " Tolong masukkan nombor yang betul!!"
