@@ -71,7 +71,7 @@ echo ""
 echo -e "  ${WH}[${COLOR1}01${WH}]$NC${COLOR1}•${WH} Start Limit\033[0m"
 echo -e "  ${WH}[${COLOR1}02${WH}]$NC${COLOR1}•${WH} Stop Limit\033[0m"
 echo ""
-echo -e "  ${COLOR1}Press [ 0 ] • To-Exit-Script\033[0m"
+echo -e "  ${COLOR1}Press [ 0 ] • To Menu\033[0m"
 echo ""
 read -rp "  Select menu : " -e num
 if [[ "$num" = "1" ]]; then
