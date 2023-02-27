@@ -207,7 +207,7 @@ echo -e "   ${YLW}CLIENT NAME       ${NC}: ${GRN}$Name${NC}"
 echo -e "   ${YLW}EXPIRY SCRIPT     ${NC}: $Exp${NC}"                       
 echo -e "   ${YLW}STATUS SCRIPT     ${NC}: ${GRN}Freemium${NC}"                         
 echo -e " ${COLOR1}╚══════════════════════════════════════════════════════╝${NC}"
-echo -e "            ${COLOR1}Press [ Ctrl+C ] • To-Exit-Script\033[0m"
+echo -e "            ${COLOR1}Press [ ${RED}Ctrl+C ${COLOR1}] • To-Exit-Script\033[0m"
 echo -e ""
 echo -ne " ${bold}${GRN}Select menu ${NC}: "; read opt
 case $opt in
