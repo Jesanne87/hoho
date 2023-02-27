@@ -62,111 +62,111 @@ x="ok"
 PERMISSION
 
 clear
-echo -e " $COLOR1╔======================================================╗${NC}"
-echo -e " $COLOR1${NC} ${COLBG1}                   ${WH}• THEME PANEL •                    ${NC} $COLOR1 $NC"
-echo -e " $COLOR1╚======================================================╝${NC}"
-echo -e " $COLOR1╔======================================================╗${NC}"
+echo -e " $COLOR1╔══════════════════════════════════════════════════════╗${NC}"
+echo -e " $COLOR1║${NC}                    ${WH}• THEME PANEL •                 ${NC} $COLOR1 ║$NC"
+echo -e " $COLOR1╚══════════════════════════════════════════════════════╝${NC}"
+echo -e " $COLOR1╔══════════════════════════════════════════════════════╗${NC}"
 echo -e " $COLOR1 $NC  ${WH}[${COLOR1}01${WH}]$NC ${COLOR1}• ${WH}BIRU2 LAUT GITU    ${WH}[${COLOR1}04${WH}]$NC ${COLOR1}• ${WH}BIRU TERANG LANGIT$NC"
 echo -e " $COLOR1 $NC  ${WH}[${COLOR1}02${WH}]$NC ${COLOR1}• ${WH}MERAH2 DELIMA      ${WH}[${COLOR1}05${WH}]$NC ${COLOR1}• ${WH}HIJAU DEDAUNAN$NC"
 echo -e " $COLOR1 $NC  ${WH}[${COLOR1}03${WH}]$NC ${COLOR1}• ${WH}SI KUNING          ${WH}[${COLOR1}06${WH}]$NC ${COLOR1}• ${WH}PINK LADY$NC"
 echo -e " $COLOR1 $NC"
 echo -e " $COLOR1 $NC                 ${WH}[${COLOR1}00${WH}]$NC ${COLOR1}• ${WH}GO BACK$NC"
-echo -e " $COLOR1╚======================================================╝${NC}"
-echo -e " $COLOR1╔========================= ${WH}BY${NC} ${COLOR1}=========================╗${NC}"
+echo -e " $COLOR1╚══════════════════════════════════════════════════════╝${NC}"
+echo -e " $COLOR1╔═════════════════════════ ${WH}BY${NC} ${COLOR1}═════════════════════════╗${NC}"
 echo -e " $COLOR1 ${NC}                ${WH}• \e[1;33mJsPhantom${NC} @ 2023 •${NC}                 $COLOR1 $NC"
-echo -e " $COLOR1╚======================================================╝${NC}"
+echo -e " $COLOR1╚══════════════════════════════════════════════════════╝${NC}"
 echo -e ""
 echo -ne " ${WH}Select menu ${COLOR1}: ${WH}"; read colormenu 
 case $colormenu in
 01 | 1)
 clear
 echo "blue" >/etc/JsPhantom/theme/color.conf
-echo -e " $COLOR1╔======================================================╗${NC}"
-echo -e " $COLOR1${NC} ${COLBG1}                ${WH}    • BLUE THEME •                    ${NC} $COLOR1 $NC"
-echo -e " $COLOR1╚======================================================╝${NC}"
-echo -e " $COLOR1╔======================================================╗${NC}"
+echo -e " $COLOR1╔══════════════════════════════════════════════════════╗${NC}"
+echo -e " $COLOR1║${NC}              ${WH}      • BLUE THEME •                   ${NC} $COLOR1║ $NC"
+echo -e " $COLOR1╚══════════════════════════════════════════════════════╝${NC}"
+echo -e " $COLOR1╔══════════════════════════════════════════════════════╗${NC}"
 echo -e " $COLOR1 $NC"
 echo -e " $COLOR1 $NC ${WH}        [${COLOR1}INFO${WH}] ${WH}TEAM BLUE Active Successfully${NC}"
 echo -e " $COLOR1 $NC"
-echo -e " $COLOR1╚======================================================╝${NC}"
-echo -e " $COLOR1╔========================= ${WH}BY${NC} ${COLOR1}=========================╗${NC}"
+echo -e " $COLOR1╚══════════════════════════════════════════════════════╝${NC}"
+echo -e " $COLOR1╔═════════════════════════ ${WH}BY${NC} ${COLOR1}═════════════════════════╗${NC}"
 echo -e " $COLOR1 ${NC}                ${WH}• \e[1;33mJsJsPhantom${NC} @ 2023 •${NC}                 $COLOR1 $NC"
-echo -e " $COLOR1╚======================================================╝${NC}"                                                                                                                          
+echo -e " $COLOR1╚══════════════════════════════════════════════════════╝${NC}"                                                                                                                          
 ;;
 02 | 2)
 clear
 echo "red" >/etc/JsPhantom/theme/color.conf
-echo -e " $COLOR1╔======================================================╗${NC}"
-echo -e " $COLOR1${NC} ${COLBG1}                ${WH}     • RED THEME •                     ${NC} $COLOR1 $NC"
-echo -e " $COLOR1╚======================================================╝${NC}"
-echo -e " $COLOR1╔======================================================╗${NC}"
+echo -e " $COLOR1╔══════════════════════════════════════════════════════╗${NC}"
+echo -e " $COLOR1║${NC}               ${WH}     • RED THEME •                    ${NC} $COLOR1║ $NC"
+echo -e " $COLOR1╚══════════════════════════════════════════════════════╝${NC}"
+echo -e " $COLOR1╔══════════════════════════════════════════════════════╗${NC}"
 echo -e " $COLOR1 $NC"
 echo -e " $COLOR1 $NC ${WH}        [${COLOR1}INFO${WH}] ${WH}TEAM RED Active Successfully${NC}"
 echo -e " $COLOR1 $NC"
-echo -e " $COLOR1╚======================================================╝${NC}"
-echo -e " $COLOR1╔========================= ${WH}BY${NC} ${COLOR1}=========================╗${NC}"
+echo -e " $COLOR1╚══════════════════════════════════════════════════════╝${NC}"
+echo -e " $COLOR1╔═════════════════════════ ${WH}BY${NC} ${COLOR1}═════════════════════════╗${NC}"
 echo -e " $COLOR1 ${NC}                ${WH}• \e[1;33mJsJsPhantom${NC} @ 2023 •${NC}                 $COLOR1 $NC"
-echo -e " $COLOR1╚======================================================╝${NC}" 
+echo -e " $COLOR1╚══════════════════════════════════════════════════════╝${NC}" 
 ;;
 03 | 3)
 clear
 echo "yellow" >/etc/JsPhantom/theme/color.conf
-echo -e " $COLOR1╔======================================================╗${NC}"
-echo -e " $COLOR1${NC} ${COLBG1}               ${WH}• YELLOW THEME •                       ${NC} $COLOR1 $NC"
-echo -e " $COLOR1└─────────────────────────────────────────────────┘${NC}"
-echo -e " $COLOR1╔======================================================╗${NC}"
+echo -e " $COLOR1╔══════════════════════════════════════════════════════╗${NC}"
+echo -e " $COLOR1║${NC}                  ${WH}• YELLOW THEME •                   ${NC} $COLOR1║ $NC"
+echo -e " $COLOR1╚══════════════════════════════════════════════════════╝${NC}"
+echo -e " $COLOR1╔══════════════════════════════════════════════════════╗${NC}"
 echo -e " $COLOR1 $NC"
 echo -e " $COLOR1 $NC ${WH}        [${COLOR1}INFO${WH}] ${WH}TEAM YELLOW Active Successfully${NC}"
 echo -e " $COLOR1 $NC"
-echo -e " $COLOR1╚======================================================╝${NC}"
-echo -e " $COLOR1╔========================= ${WH}BY${NC} ${COLOR1}=========================╗${NC}"
+echo -e " $COLOR1╚══════════════════════════════════════════════════════╝${NC}"
+echo -e " $COLOR1╔═════════════════════════ ${WH}BY${NC} ${COLOR1}═════════════════════════╗${NC}"
 echo -e " $COLOR1 ${NC}                ${WH}• \e[1;33mJsJsPhantom${NC} @ 2023 •${NC}                 $COLOR1 $NC"
-echo -e " $COLOR1╚======================================================╝${NC}" 
+echo -e " $COLOR1╚══════════════════════════════════════════════════════╝${NC}" 
 ;;
 04 | 4)
 clear
 echo "cyan" >/etc/JsPhantom/theme/color.conf
-echo -e " $COLOR1╔======================================================╗${NC}"
-echo -e " $COLOR1${NC} ${COLBG1}                ${WH}• CYAN THEME •                        ${NC} $COLOR1 $NC"
-echo -e " $COLOR1╚======================================================╝${NC}"
-echo -e " $COLOR1╔======================================================╗${NC}"
+echo -e " $COLOR1╔══════════════════════════════════════════════════════╗${NC}"
+echo -e " $COLOR1║${NC}                   ${WH}• CYAN THEME •                    ${NC} $COLOR1║ $NC"
+echo -e " $COLOR1╚══════════════════════════════════════════════════════╝${NC}"
+echo -e " $COLOR1╔══════════════════════════════════════════════════════╗${NC}"
 echo -e " $COLOR1 $NC"
 echo -e " $COLOR1 $NC ${WH}        [${COLOR1}INFO${WH}] ${WH}TEAM CYAN Active Successfully${NC}"
 echo -e " $COLOR1 $NC"
-echo -e " $COLOR1╚======================================================╝${NC}"
-echo -e " $COLOR1╔========================= ${WH}BY${NC} ${COLOR1}=========================╗${NC}"
+echo -e " $COLOR1╚══════════════════════════════════════════════════════╝${NC}"
+echo -e " $COLOR1╔═════════════════════════ ${WH}BY${NC} ${COLOR1}═════════════════════════╗${NC}"
 echo -e " $COLOR1 ${NC}                ${WH}• \e[1;33mJsJsPhantom${NC} @ 2023 •${NC}                 $COLOR1 $NC"
-echo -e " $COLOR1╚======================================================╝${NC}" 
+echo -e " $COLOR1╚══════════════════════════════════════════════════════╝${NC}" 
 ;;
 05 | 5)
 clear
 echo "green" >/etc/JsPhantom/theme/color.conf
-echo -e " $COLOR1╔======================================================╗${NC}"
-echo -e " $COLOR1${NC} ${COLBG1}               ${WH}• GREEN THEME •                        ${NC} $COLOR1 $NC"
-echo -e " $COLOR1╚======================================================╝${NC}"
-echo -e " $COLOR1╔======================================================╗${NC}"
+echo -e " $COLOR1╔══════════════════════════════════════════════════════╗${NC}"
+echo -e " $COLOR1║${NC}                  ${WH}• GREEN THEME •                   ${NC} $COLOR1 ║$NC"
+echo -e " $COLOR1╚══════════════════════════════════════════════════════╝${NC}"
+echo -e " $COLOR1╔══════════════════════════════════════════════════════╗${NC}"
 echo -e " $COLOR1 $NC"
 echo -e " $COLOR1 $NC ${WH}        [${COLOR1}INFO${WH}] ${WH}TEAM GREEN Active Successfully${NC}"
 echo -e " $COLOR1 $NC"
-echo -e " $COLOR1╚======================================================╝${NC}"
-echo -e " $COLOR1╔========================= ${WH}BY${NC} ${COLOR1}=========================╗${NC}"
-echo -e " $COLOR1 ${NC}                ${WH}• \e[1;33mJsJsPhantom${NC}  @ 2023 •${NC}                 $COLOR1 $NC"
-echo -e " $COLOR1╚======================================================╝${NC}" 
+echo -e " $COLOR1╚══════════════════════════════════════════════════════╝${NC}"
+echo -e " $COLOR1╔═════════════════════════ ${WH}BY${NC} ${COLOR1}═════════════════════════╗${NC}"
+echo -e " $COLOR1║ ${NC}                ${WH}• \e[1;33mJsJsPhantom${NC}  @ 2023 •${NC}                 $COLOR1 $NC"
+echo -e " $COLOR1╚══════════════════════════════════════════════════════╝${NC}" 
 ;;
 06 | 6)
 clear
 echo "magenta" >/etc/JsPhantom/theme/color.conf
-echo -e " $COLOR1╔======================================================╗${NC}"
-echo -e " $COLOR1${NC} ${COLBG1}               ${WH}• MAGENTA THEME •                      ${NC} $COLOR1 $NC"
-echo -e " $COLOR1╚======================================================╝${NC}"
-echo -e " $COLOR1╔======================================================╗${NC}"
+echo -e " $COLOR1╔══════════════════════════════════════════════════════╗${NC}"
+echo -e " $COLOR1║${NC}                  ${WH}• MAGENTA THEME •                  ${NC} $COLOR1║ $NC"
+echo -e " $COLOR1╚══════════════════════════════════════════════════════╝${NC}"
+echo -e " $COLOR1╔══════════════════════════════════════════════════════╗${NC}"
 echo -e " $COLOR1 $NC"
 echo -e " $COLOR1 $NC ${WH}        [${COLOR1}INFO${WH}] ${WH}TEAM MAGENTA Active Successfully${NC}"
 echo -e " $COLOR1 $NC"
-echo -e " $COLOR1╚======================================================╝${NC}"
-echo -e " $COLOR1╔========================= ${WH}BY${NC} ${COLOR1}=========================╗${NC}"
-echo -e " $COLOR1 ${NC}                ${WH}• \e[1;33mJsJsPhantom${NC} @ 2023 •${NC}                 $COLOR1 $NC"
-echo -e " $COLOR1╚======================================================╝${NC}" 
+echo -e " $COLOR1╚══════════════════════════════════════════════════════╝${NC}"
+echo -e " $COLOR1╔═════════════════════════ ${WH}BY${NC} ${COLOR1}═════════════════════════╗${NC}"
+echo -e " $COLOR1║ ${NC}                ${WH}• \e[1;33mJsJsPhantom${NC} @ 2023 •${NC}                 $COLOR1 $NC"
+echo -e " $COLOR1╚══════════════════════════════════════════════════════╝${NC}" 
 ;;
 00 | 0)
 clear
@@ -178,5 +178,5 @@ menu-theme
 ;;
 esac
 echo -e ""
-read -n 1 -s -r -p "  Press any key to back on menu"
+read -n 1 -s -r -p "  Press any key to back on Theme Panel"
 menu-theme 
