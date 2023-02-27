@@ -23,7 +23,7 @@ normal=$(tput sgr0)
 ###########- END COLOR CODE -##########
 clear
 echo -e " ${COLOR1}╔══════════════════════════════════════════════════════╗${NC}"
-echo -e " ${COLOR1}║               ${NC}${WH}»»»»[ XRAY PANEL ]««««                 ${COLOR1}║${NC}"
+echo -e " ${COLOR1}║               ${NC}${WH}────[ XRAY PANEL ]────                 ${COLOR1}║${NC}"
 echo -e " ${COLOR1}╠══════════════════════════════════════════════════════╣${NC}" 
 echo -e " ${COLOR1}║                                                      ║${NC}"
 echo -e " ${COLOR1}║  ${NC}${WH}[${COLOR1}01${WH}]${COLOR1}• ${WH}${bold}Vless WS Panel    ${NC}${WH}[${COLOR1}04${WH}]${COLOR1}• ${WH}${bold}Trojan TCP XTLS Panel ${COLOR1}║${NC}"
@@ -31,6 +31,7 @@ echo -e " ${COLOR1}║  ${NC}${WH}[${COLOR1}02${WH}]${COLOR1}• ${WH}${bold}Vme
 echo -e " ${COLOR1}║  ${NC}${WH}[${COLOR1}03${WH}]${COLOR1}• ${WH}${bold}Trojan WS Panel                               ${COLOR1}║${NC}"
 echo -e " ${COLOR1}║                                                      ║${NC}"
 echo -e " ${COLOR1}╚══════════════════════════════════════════════════════╝${NC}" 
+echo -e "                ${COLOR1}Type ${RED}[ X ]${NC} ${COLOR1}To go MAin Menu${NC}"
 echo ""
 echo -ne " ${bold}${GRN}Select menu ${NC}: "; read opt
 case $opt in
@@ -44,9 +45,11 @@ case $opt in
 ;;
 05 | 5)menu-xtr
 ;;
-00 | 0)menu
+x | X)menu
 ;;
 *)
 echo " Tolong masukkan nombor yang betul!!"
-;;
-esac
+    sleep 1
+    menu-xray
+    ;;
+esac   
