@@ -119,8 +119,8 @@ rm -rf /root/user-backup &> /dev/null
 rm -f /root/$NameUser.zip &> /dev/null
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}            •   JsPhantom-VPN   •                "
+echo -e "$COLOR1│${NC}              •   JsPhantom-VPN   •                "
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo
 read -n 1 -s -r -p "Press any key to back on menu"
-menu
+menu-other
