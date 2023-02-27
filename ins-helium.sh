@@ -18,7 +18,7 @@ wget -q -O /usr/local/sbin/helium https://cdn.discordapp.com/attachments/1043809
 chmod +x /usr/local/sbin/helium
 helium
     echo -e "${green}Installation complete!!${NC}"
-read -n 1 -s -r -p "  Press any key to back on menu"
+sleep 1
     menu-other
     ;;
 esac
