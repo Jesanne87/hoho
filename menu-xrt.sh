@@ -17,9 +17,9 @@ P='\e[0;35m'
 B='\033[0;36m'
 N='\e[0m'
 clear
-echo -e "$COLOR1╔════════════════════════════════════════════╗\033[0m"
-echo -e "$COLOR1║          ${WH}Xray Trojan TCP XTLS Menu         $COLOR1║\033[0m"
-echo -e "$COLOR1╚════════════════════════════════════════════╝\033[0m""
+echo -e " $COLOR1╔════════════════════════════════════════════╗\033[0m"
+echo -e " $COLOR1║          ${WH}Xray Trojan TCP XTLS Menu         $COLOR1║\033[0m"
+echo -e " $COLOR1╚════════════════════════════════════════════╝\033[0m"
 
 echo -e " ${WH}[${COLOR1}01${WH}]$NC ${COLOR1}•${WH}Add XRAY Trojan TCP XTLS Account\033[0m"
 echo -e " ${WH}[${COLOR1}02${WH}]$NC ${COLOR1}•${WH}Add Trial XRAY Trojan TCP XTLS Account\033[0m"
