@@ -32,7 +32,7 @@ echo -e " ${WH}[${COLOR1}00${WH}]$NC ${COLOR1}• Back To Main Menu\033[0m"
 echo ""
 echo -e " \033[1;37mPress [ Ctrl+C ] • To-Exit-Script\033[0m"
 echo ""
-echo -ne "Select menu : "; read x
+echo -ne " Select menu : "; read x
 if [[ $(cat /opt/.ver) = $serverV ]] > /dev/null 2>&1; then
     if [[ $x -eq 1 ]]; then
        add-xtr
