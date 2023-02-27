@@ -125,9 +125,9 @@ fi
 # // xray status
 xray=$( systemctl status xray | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $xray == "running" ]]; then
-    status_xray="${GRN}ON${NC}"
+    status_xray="${NC}${GRN}ON${NC}"
 else
-    status_xray="${RED}OFF${NC}"
+    status_xray="${NC}${RED}OFF${NC}"
 fi
 
 # // script version
@@ -170,24 +170,24 @@ monthly_usage=$(vnstat -m --oneline | awk -F\; '{print $11}' | sed 's/ //')
 echo -e " ${COLOR1}╔══════════════════════════════════════════════════════╗${NC}"
 echo -e " ${COLOR1}║       ${WH}───[ AutoScript MODED BY JsPhantom ]───        ${COLOR1}${NC}${COLOR1}║${NC}"
 echo -e " ${COLOR1}╚══════════════════════════════════════════════════════╝${NC}"
-echo -e "           [ XRAY-CORE : ${status_xray} ]   [ NGINX : ${status_nginx} ]${NC}"         
+echo -e "           ${WH}[ XRAY-CORE : ${status_xray} ${WH}]   [ NGINX : ${status_nginx} ${WH}]${NC}"         
 echo -e " ${COLOR1}╔══════════════════════════════════════════════════════╗${NC}"
 echo -e " ${COLOR1}║           ${WH}────[ SERVER INFORMATION ]────             ${COLOR1}║${NC}"
-echo -e " ${COLOR1}╚══════════════════════════════════════════════════════╝"
+echo -e " ${COLOR1}╚══════════════════════════════════════════════════════╝${NC}"
 if [ "$cekup" = "day" ]; then
-echo -e "   ${YLW}SYSTEM UPTIME      ${NC}:  $uphours $upminutes $uptimecek"             
+echo -e "   ${YLW}SYSTEM UPTIME      ${NC}:  ${WH}$uphours $upminutes $uptimecek${NC}"             
 else
-echo -e "   ${YLW}SYSTEM UPTIME      ${NC}:  $uphours $upminutes"
+echo -e "   ${YLW}SYSTEM UPTIME      ${NC}:  ${WH}$uphours $upminutes${NC}"
 fi
-echo -e "   ${YLW}MEMORY USAGE       ${NC}:  ${ram_used}MB / ${total_ram}MB (${ram_usage}%)"           
-echo -e "   ${YLW}CPU LOAD           ${NC}:  $load_cpu"                           
-echo -e "   ${YLW}KERNEL             ${NC}:  $(  uname -r)"                 
-echo -e "   ${YLW}VPN CORE           ${NC}:  Xray-Core"                      
-echo -e "   ${YLW}ISP                ${NC}:  $(curl -s ipinfo.io/org | cut -d " " -f 2-10)"               
-echo -e "   ${YLW}DOMAIN             ${NC}:  ${GRN}$domain"               
-echo -e "   ${YLW}IP ADDRESS         ${NC}:  ${GRN}$IPVPS"                
-echo -e "   ${YLW}DAILY DATA USAGE   ${NC}:  ${WH}$daily_usage"                        
-echo -e "   ${YLW}MONTHLY DATA USAGE ${NC}:  ${WH}$monthly_usage"                      
+echo -e "   ${YLW}MEMORY USAGE       ${NC}:  ${WH}${ram_used}MB / ${total_ram}MB (${ram_usage}%)${NC}"           
+echo -e "   ${YLW}CPU LOAD           ${NC}:  ${WH}$load_cpu${NC}"                           
+echo -e "   ${YLW}KERNEL             ${NC}:  ${WH}$(  uname -r)${NC}"                 
+echo -e "   ${YLW}VPN CORE           ${NC}:  ${WH}Xray-Core${NC}"                      
+echo -e "   ${YLW}ISP                ${NC}:  ${WH}$(curl -s ipinfo.io/org | cut -d " " -f 2-10)${NC}"               
+echo -e "   ${YLW}DOMAIN             ${NC}:  ${GRN}$domain${NC}"               
+echo -e "   ${YLW}IP ADDRESS         ${NC}:  ${GRN}$IPVPS${NC}"                
+echo -e "   ${YLW}DAILY DATA USAGE   ${NC}:  ${WH}$daily_usage${NC}"                        
+echo -e "   ${YLW}MONTHLY DATA USAGE ${NC}:  ${WH}$monthly_usage${NC}"                      
 echo -e " ${COLOR1}╔══════════════════════════════════════════════════════╗${NC}"
 echo -e " ${COLOR1}║                   ${WH}────[ MENU ]────                   ${COLOR1}║${NC}"
 echo -e " ${COLOR1}╚══════════════════════════════════════════════════════╝${NC}"
@@ -202,9 +202,9 @@ fi
 echo -e ""
 echo -e " ${COLOR1}╚══════════════════════════════════════════════════════╝${NC}"     
 echo -e " ${COLOR1}╔══════════════════════════════════════════════════════╗${NC}"
-echo -e "   ${YLW}VERSION           ${NC}: Multiport Websocket $myver${NC}"        
+echo -e "   ${YLW}VERSION           ${NC}: ${WH}Multiport Websocket $myver${NC}"        
 echo -e "   ${YLW}CLIENT NAME       ${NC}: ${GRN}$Name${NC}"                              
-echo -e "   ${YLW}EXPIRY SCRIPT     ${NC}: $Exp${NC}"                       
+echo -e "   ${YLW}EXPIRY SCRIPT     ${NC}: ${WH}$Exp${NC}"                       
 echo -e "   ${YLW}STATUS SCRIPT     ${NC}: ${GRN}Freemium${NC}"                         
 echo -e " ${COLOR1}╚══════════════════════════════════════════════════════╝${NC}"
 echo -e "            ${COLOR1}Press [ ${RED}Ctrl+C ${COLOR1}] • To-Exit-Script\033[0m"
@@ -213,7 +213,7 @@ echo -ne " ${bold}${GRN}Select menu ${NC}: "; read opt
 case $opt in
 01 | 1) clear ; menu-xray ;;
 02 | 2) clear ; menu-other ;;
-03 | 3) clear ; $up2u ;;
+03 | 3) clear ; $up2u ;; 
 esac
 menu
 
