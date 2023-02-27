@@ -172,7 +172,6 @@ echo -e " $COLOR1╚════════════════════
 menu-other
 ;;
 *)
-sleep 2
 echo -e ""
 esac
 menu-theme
