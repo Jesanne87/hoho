@@ -26,7 +26,7 @@ echo -e "$COLOR1│${NC} ${COLBG1}             • BACKUP PANEL MENU •        
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 echo -e "$COLOR1│${NC}  [INFO] Create password for database"
-read -rp "      [  Info ]$COLOR1|${NC}[Enter password : " -e InputPass
+read -rp "   [INFO] Enter password : " -e InputPass
 sleep 1
 if [[ -z $InputPass ]]; then
 exit 0
