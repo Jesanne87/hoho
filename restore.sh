@@ -47,3 +47,8 @@ systemctl restart xray@trojan.service
 service cron restart
 sleep 0.5
 clear
+echo -e ""
+esac
+menu-other
+
+
