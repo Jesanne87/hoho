@@ -37,27 +37,27 @@ if [[ $(cat /opt/.ver) = $serverV ]] > /dev/null 2>&1; then
     if [[ $x -eq 1 ]]; then
        add-tr
        read -n1 -r -p "Press any key to continue..."
-       menu
+       menu-tr
     elif [[ $x -eq 2 ]]; then
        trial-tr
        read -n1 -r -p "Press any key to continue..."
-       menu
+       menu-tr
     elif [[ $x -eq 3 ]]; then
        cek-tr
        read -n1 -r -p "Press any key to continue..."
-       menu
+       menu-tr
     elif [[ $x -eq 4 ]]; then
        del-tr
        read -n1 -r -p "Press any key to continue..."
-       menu
+       menu-tr
     elif [[ $x -eq 5 ]]; then
        renew-tr
        read -n1 -r -p "Press any key to continue..."
-       menu
+       menu-tr
     elif [[ $x -eq 6 ]]; then
        user-tr
        read -n1 -r -p "Press any key to continue..."
-       menu
+       menu-tr
     elif [[ $x -eq 0 ]]; then
        clear
        menu-xray
