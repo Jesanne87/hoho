@@ -63,8 +63,7 @@ case $opt in
 ;;
 11 )restart
 ;;
-12 )speedtest
-;;
+12 )clear ; speedtest ; echo "" ; read -n1 -r -p "Press any key to continue..." ; menu-other ;;
 13 )vnstat
 ;;
 14 )menu-theme 
