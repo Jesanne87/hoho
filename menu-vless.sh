@@ -28,9 +28,9 @@ P='\e[0;35m'
 B='\033[0;36m'
 N='\e[0m'
 clear
-echo -e "$COLOR1╔============================================╗\033[0m"
-echo -e " $COLOR1${COLBG1}           XRAY VLESS WS MENU               \033[0m"
-echo -e "$COLOR1╚============================================╝${NC}"
+echo -e "$COLOR1╔════════════════════════════════════════════╗\033[0m"
+echo -e "$COLOR1║             ${WH}Xray Vless WS Menu             $COLOR1║\033[0m"
+echo -e "$COLOR1╚════════════════════════════════════════════╝\033[0m"
 
 echo -e " ${WH}[${COLOR1}01${WH}]$NC ${COLOR1}• ${WH}Add XRAY Vless WS Account${NC}"
 echo -e " ${WH}[${COLOR1}02${WH}]$NC ${COLOR1}• ${WH}Add Trial XRAY Vless WS Account${NC}"
@@ -43,7 +43,7 @@ echo -e " ${WH}[${COLOR1}00${WH}]$NC ${COLOR1}  Back To Menu${NC}"
 echo ""
 echo -e " \033[1;37mPress [ Ctrl+C ] • To-Exit-Script\033[0m"
 echo ""
-echo -ne "Select menu : "; read x
+echo -ne " Select menu : "; read x
 if [[ $(cat /opt/.ver) = $serverV ]] > /dev/null 2>&1; then
     if [[ $x -eq 1 ]]; then
        add-vless
