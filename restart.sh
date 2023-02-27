@@ -81,32 +81,32 @@ res11() {
 }
 
 clear
-echo -e "$COLOR1╔============================================╗\033[0m"
-echo -e " $COLOR1${COLBG1}          ${WH}Restart Service Center            \e[0m"
-echo -e "$COLOR1╚============================================╝\033[0m"
+echo -e " $COLOR1╔════════════════════════════════════════════╗\033[0m"
+echo -e " $COLOR1║           ${WH}Restart Service Centre           $COLOR1║\e[0m"
+echo -e " $COLOR1╚════════════════════════════════════════════╝\033[0m"
 echo -e ""
 echo -e "  \033[1;91m Service Restart Fail2ban\033[1;37m"
-fun_bar 'res1'
+fun_bar ' res1'
 echo -e "  \033[1;91m Service Restart Cron\033[1;37m"
-fun_bar 'res2'
+fun_bar ' res2'
 echo -e "  \033[1;91m Service Restart Nginx\033[1;37m"
-fun_bar 'res3'
+fun_bar ' res3'
 echo -e "  \033[1;91m Service Restart Vmess TLS\033[1;37m"
-fun_bar 'res4'
+fun_bar ' res4'
 echo -e "  \033[1;91m Service Restart Vmess None TLS\033[1;37m"
-fun_bar 'res5'
+fun_bar ' res5'
 echo -e "  \033[1;91m Service Restart Vless TLS\033[1;37m"
-fun_bar 'res6'
+fun_bar ' res6'
 echo -e "  \033[1;91m Service Restart Vless None TLS\033[1;37m"
-fun_bar 'res7'
+fun_bar ' res7'
 echo -e "  \033[1;91m Service Restart Trojan TLS\033[1;37m"
-fun_bar 'res8'
+fun_bar ' res8'
 echo -e "  \033[1;91m Service Restart Trojan None TLS\033[1;37m"
-fun_bar 'res9'
+fun_bar ' res9'
 echo -e "  \033[1;91m Service Restart Trojan TCP XTLS\033[1;37m"
-fun_bar 'res10'
+fun_bar ' res10'
 echo -e "  \033[1;91m Service Restart Trojan TCP TLS\033[1;37m"
-fun_bar 'res11'
+fun_bar ' res11'
 echo -e ""
 read -n 1 -s -r -p "Press any key to back on menu"
-menu
+menu-other
