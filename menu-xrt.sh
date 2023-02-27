@@ -28,7 +28,7 @@ echo -e " ${WH}[${COLOR1}04${WH}]$NC ${COLOR1}•${WH}Delete XRAY Trojan TCP XTL
 echo -e " ${WH}[${COLOR1}05${WH}]$NC ${COLOR1}•${WH}Renew XRAY Trojan TCP XTLS Account\033[0m"
 echo -e " ${WH}[${COLOR1}06${WH}]$NC ${COLOR1}•${WH}Check XRAY Trojan TCP XTLS Config\033[0m"
 
-echo -e " ${WH}[${COLOR1}00${WH}]$NC ${COLOR1}•Back To Main Menu\033[0m"
+echo -e " ${WH}[${COLOR1}00${WH}]$NC ${COLOR1}•Back To Menu\033[0m"
 echo ""
 echo -e " \033[1;37mPress [ Ctrl+C ] • To-Exit-Script\033[0m"
 echo ""
@@ -60,7 +60,7 @@ if [[ $(cat /opt/.ver) = $serverV ]] > /dev/null 2>&1; then
        menu
     elif [[ $x -eq 0 ]]; then
        clear
-       menu
+       menu-xray
     else
        clear
        menu-xrt
