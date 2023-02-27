@@ -199,6 +199,7 @@ up2u="updatews"
 else
 up2u="menu"
 fi                                                  
+echo -e ""
 echo -e " ${COLOR1}╚══════════════════════════════════════════════════════╝${NC}"     
 echo -e " ${COLOR1}╔══════════════════════════════════════════════════════╗${NC}"
 echo -e "   ${YLW}VERSION           ${NC}: Multiport Websocket $myver${NC}"        
