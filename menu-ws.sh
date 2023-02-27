@@ -17,9 +17,9 @@ P='\e[0;35m'
 B='\033[0;36m'
 N='\e[0m'
 clear
-echo -e "$COLOR1╔============================================╗\033[0m"
-echo -e " $COLOR1${COLBG1}            ${WH}XRAY VMESS WS MENU              \033[0m"
-echo -e "$COLOR1╚============================================╝\033[0m"
+echo -e "$COLOR1╔════════════════════════════════════════════╗\033[0m"
+echo -e "$COLOR1║            ${WH}Xray Vmess WS Menu              $COLOR1║\033[0m"
+echo -e "$COLOR1╚════════════════════════════════════════════╝\033[0m"
 
 echo -e " ${WH}[${COLOR1}01${WH}]$NC ${COLOR1}•${WH}Add XRAY Vmess WS Account\033[0m"
 echo -e " ${WH}[${COLOR1}02${WH}]$NC ${COLOR1}•${WH}Add Trial XRAY Vmess WS Account\033[0m"
