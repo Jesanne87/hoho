@@ -41,7 +41,7 @@ echo "start" > /home/limit
 echo "Done"
 sleep 1
 clear
-menu
+menu-other
 fi
 }
 function stop () {
@@ -54,7 +54,7 @@ echo > /home/limit
 echo "Done"
 sleep 1
 clear
-menu
+menu-other
 }
 if [[ "$cek" = "start" ]]; then
 sts="${Info}"
