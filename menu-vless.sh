@@ -39,7 +39,7 @@ echo -e " ${WH}[${COLOR1}04${WH}]$NC ${COLOR1}• ${WH}Delete XRAY Vless WS Acco
 echo -e " ${WH}[${COLOR1}05${WH}]$NC ${COLOR1}• ${WH}Renew XRAY Vless WS Account${NC}"
 echo -e " ${WH}[${COLOR1}06${WH}]$NC ${COLOR1}• ${WH}Check XRAY Vless WS Config${NC}"
 
-echo -e " ${WH}[${COLOR1}00${WH}]$NC ${COLOR1}  Back To Main Menu${NC}"
+echo -e " ${WH}[${COLOR1}00${WH}]$NC ${COLOR1}  Back To Menu${NC}"
 echo ""
 echo -e " \033[1;37mPress [ Ctrl+C ] • To-Exit-Script\033[0m"
 echo ""
@@ -71,7 +71,7 @@ if [[ $(cat /opt/.ver) = $serverV ]] > /dev/null 2>&1; then
        menu
     elif [[ $x -eq 0 ]]; then
        clear
-       menu
+       menu-xray
     else
        clear
        menu-vless
