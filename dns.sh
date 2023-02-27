@@ -13,32 +13,32 @@ export RED="\033[0;31m"
 export COLOR1="$(cat /etc/JsPhantom/theme/$colornow | grep -w "TEXT" | cut -d: -f2|sed 's/ //g')"
 export COLBG1="$(cat /etc/JsPhantom/theme/$colornow | grep -w "BG" | cut -d: -f2|sed 's/ //g')" 
 WH='\033[1;37m'                   
-###########- END COLOR CODE -##########
-yell='\e[1;33m'
-red='\e[1;31m'
-P='\e[0;35m'
-B='\033[0;36m'
-G='\033[0;32m'
-NC='\e[0m'
-N='\e[0m'
+# // Export Color & Information
+export WH='\033[1;37m'                   
+export RED='\033[0;31m'
+export GRN='\033[0;32m'
+export YLW='\033[0;33m'
+export BLU='\033[0;34m'
+export PLE='\033[0;35m'
+export CYA='\033[0;36m'
+export LHT='\033[0;37m'
+export NC='\033[0m'
 clear
-echo -e "$COLOR1╔===========================================╗\033[0m"
-echo -e "$COLOR1${COLBG1}              ${WH} ${bold}DNS Changer                  \033[0m"
-echo -e "$COLOR1╚===========================================╝\033[0m
-\033[0;32mDNS Changer By${NC} \e[1;33mJsPhantom\033[0m
-\033[1;37mTelegram : https://t.me/JsPhantom / @JsPhantom\033[0m"
+echo -e "${COLOR1}╔════════════════════════════════════════════╗\033[0m"
+echo -e "${COLOR1}║                ${WH} ${bold}DNS Changer                $COLOR1║\033[0m"
+echo -e "${COLOR1}╚════════════════════════════════════════════╝\033[0m"
 dnsfile="/root/dns"
 if test -f "$dnsfile"; then
 udns=$(cat /root/dns)
 echo -e ""
 echo -e "   Active DNS : \033[1;37m$udns\033[0m"
 fi
- echo -e "[\033[1;36m•1 \033[0m]  \033[0;32mTemporary DNS\033[0m"
- echo -e "[\033[1;36m•2 \033[0m]  \033[0;32mPermanent DNS\033[0m"
- echo -e "[\033[1;36m•3 \033[0m]  \033[0;32mReset DNS To Default\033[0m"
- echo -e "[\033[1;36m•4 \033[0m]  \033[0;32mBack To Menu\033[0m"
+ echo -e "${NC}${WH}[${COLOR1}01${WH}]${COLOR1}• ${WH}${bold}Temporary DNS\033[0m"
+ echo -e "${NC}${WH}[${COLOR1}02${WH}]${COLOR1}• ${WH}${bold}Permanent DNS\033[0m"
+ echo -e "${NC}${WH}[${COLOR1}03${WH}]${COLOR1}• ${WH}${bold}Reset DNS To Default\033[0m"
+ echo -e "${NC}${WH}[${COLOR1}00${WH}]${COLOR1}• ${bold}Back To Menu\033[0m"
 echo ""
-echo -e "\033[1;37mPress [ Ctrl+C ] • To-Exit-Script\033[0m"
+echo -e "${COLOR1}Press [ Ctrl+C ] • To-Exit-Script\033[0m"
 echo ""
 read -p "Select From Options [ 1 - 4 ] :  " dns
 echo -e ""
@@ -117,7 +117,7 @@ fi
 clear
 dns
 ;;
-4)
+0 | 00 )
 clear
 menu-other
 ;;
