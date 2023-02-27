@@ -167,15 +167,13 @@ cekup=`uptime -p | grep -ow "day"`
 IPVPS=$(curl -s icanhazip.com/ip )
 daily_usage=$(vnstat -d --oneline | awk -F\; '{print $6}' | sed 's/ //')
 monthly_usage=$(vnstat -m --oneline | awk -F\; '{print $11}' | sed 's/ //')
-echo -e " ${COLOR1}❦————❦————••————❦————••————❦————••————❦————••————❦————❦${NC}"
 echo -e " ${COLOR1}╔══════════════════════════════════════════════════════╗${NC}"
-echo -e " ${COLOR1}║${COLBG1}     ${WH}※ MULTIPORT WEBSOCKET MODED BY JsPhantom ※      ${COLOR1}║${NC}"
+echo -e " ${COLOR1}║   ${WH}───[ MULTIPORT WEBSOCKET MODED BY JsPhantom ]───   ${COLOR1}${NC}${COLOR1}║${NC}"
 echo -e " ${COLOR1}╚══════════════════════════════════════════════════════╝${NC}"
-echo -e " ${COLOR1}╔══════════════════════════════════════════════════════╗${NC}"
 echo -e "          [ XRAY-CORE : ${status_xray} ]   [ NGINX : ${status_nginx} ]${NC}"         
-echo -e " ${COLOR1}╠══════════════════════════════════════════════════════╣${NC}"
-echo -e " ${COLOR1}║${COLBG1}           ${WH}»»»»[ SERVER INFORMATION ]««««            ${COLOR1}║${NC}"
-echo -e " ${COLOR1}╠══════════════════════════════════════════════════════╣"
+echo -e " ${COLOR1}╔══════════════════════════════════════════════════════╗${NC}"
+echo -e " ${COLOR1}║           ${WH}────[ SERVER INFORMATION ]────             ${COLOR1}║${NC}"
+echo -e " ${COLOR1}╚══════════════════════════════════════════════════════╝"
 if [ "$cekup" = "day" ]; then
 echo -e "   ${YLW}SYSTEM UPTIME      ${NC}:  $uphours $upminutes $uptimecek"             
 else
@@ -190,15 +188,17 @@ echo -e "   ${YLW}DOMAIN             ${NC}:  ${GRN}$domain"
 echo -e "   ${YLW}IP ADDRESS         ${NC}:  ${GRN}$IPVPS"                
 echo -e "   ${YLW}DAILY DATA USAGE   ${NC}:  ${WH}$daily_usage"                        
 echo -e "   ${YLW}MONTHLY DATA USAGE ${NC}:  ${WH}$monthly_usage"                      
-echo -e " ${COLOR1}╚══════════════════════════════════════════════════════╝${NC}"
 echo -e " ${COLOR1}╔══════════════════════════════════════════════════════╗${NC}"
-echo -e " ${COLOR1}║${COLBG1}                   ${WH}»»»»[ MENU ]««««                  ${COLOR1}║${NC}"
-echo -e " ${COLOR1}╠══════════════════════════════════════════════════════╣${NC}"
+echo -e " ${COLOR1}║                   ${WH}────[ MENU ]────                   ${COLOR1}║${NC}"
+echo -e " ${COLOR1}╚══════════════════════════════════════════════════════╝${NC}"
 echo -e " "                                                      
 echo -e "           ${WH}[${COLOR1}01${WH}]${COLOR1}• ${WH}XRAY MENU    ${WH}[${COLOR1}02${WH}]${COLOR1}• ${WH}OTHER MENU${NC}"          
 if [[ $serverV > $myver ]]; then
 echo -e "           ${WH}[${COLOR1}03${WH}]${COLOR1}• ${RED}UPDATE AUTOSCRIPT TO ${GRN}$serverV${NC}"                  
-echo -e " "                                                      
+up2u="updatews"
+else
+up2u="menu"
+fi                                                  
 echo -e " ${COLOR1}╚══════════════════════════════════════════════════════╝${NC}"     
 echo -e " ${COLOR1}╔══════════════════════════════════════════════════════╗${NC}"
 echo -e "   ${YLW}VERSION           ${NC}: Multiport Websocket $myver${NC}"        
@@ -206,19 +206,17 @@ echo -e "   ${YLW}CLIENT NAME       ${NC}: ${GRN}$Name${NC}"
 echo -e "   ${YLW}EXPIRY SCRIPT     ${NC}: $Exp${NC}"                       
 echo -e "   ${YLW}STATUS SCRIPT     ${NC}: ${GRN}Freemium${NC}"                         
 echo -e " ${COLOR1}╚══════════════════════════════════════════════════════╝${NC}"
-echo -e " ${COLOR1}❦————❦————••————❦————••————❦————••————❦————••————❦————❦${NC}"
-echo -e "              ${YLW}Type [ x ] To Exit From Menu${NC}"
-up2u="updatews"
-else
-up2u="menu"
-fi
-echo ""
+echo -e "                ${COLOR1}Type ${RED}[ X ]${NC} ${COLOR1}Exit From Menu${NC}"
+echo -e ""
 echo -ne " ${bold}${GRN}Select menu ${NC}: "; read opt
 case $opt in
 01 | 1) clear ; menu-xray ;;
 02 | 2) clear ; menu-other ;;
 03 | 3) clear ; $up2u ;;
 00 | 0) clear ; menu ;;
-x | X) exit ;;
-*) clear ; menu ;;
+x | X) exit
+echo " Tolong masukkan nombor yang betul!!"
 esac
+ sleep 1
+    menu
+    ;;
