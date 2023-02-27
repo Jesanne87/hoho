@@ -67,11 +67,11 @@ echo -e " $COLOR1║            ${WH}LIMIT BANDWITH SPEED            $COLOR1║ 
 echo -e " $COLOR1╚════════════════════════════════════════════╝\033[0m"
 echo ""
 echo -e "  STATUS : $sts"
+echo ""
 echo -e "  ${WH}[${COLOR1}01${WH}]$NC${COLOR1}•${WH} Start Limit\033[0m"
 echo -e "  ${WH}[${COLOR1}02${WH}]$NC${COLOR1}•${WH} Stop Limit\033[0m"
-echo -e "  ${WH}[${COLOR1}00${WH}]$NC${COLOR1}• Back To Menu\033[0m"
 echo ""
-echo -e "  ${COLOR1}Press [ Ctrl+C ] • To-Exit-Script\033[0m"
+echo -e "  ${COLOR1}Press [ 0 ] • To-Exit-Script\033[0m"
 echo ""
 read -rp "  Select menu : " -e num
 if [[ "$num" = "1" ]]; then
