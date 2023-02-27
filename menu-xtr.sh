@@ -17,9 +17,9 @@ P='\e[0;35m'
 B='\033[0;36m'
 N='\e[0m'
 clear
-echo -e "$COLOR1╔============================================╗\033[0m"
-echo -e " $COLOR1${COLBG1}           ${WH}Xray Trojan TCP Menu             \033[0m"
-echo -e "$COLOR1╚============================================╝\033[0m"
+echo -e " $COLOR1╔════════════════════════════════════════════╗\033[0m"
+echo -e " $COLOR1║           ${WH}Xray Trojan TCP Menu             ║\033[0m"
+echo -e " $COLOR1╚════════════════════════════════════════════╝\033[0m"
 
 echo -e " ${WH}[${COLOR1}01${WH}]$NC ${COLOR1}• ${WH}Add XRAY Trojan TCP Account\033[0m"
 echo -e " ${WH}[${COLOR1}02${WH}]$NC ${COLOR1}• ${WH}Add Trial XRAY Trojan TCP Account\033[0m"
@@ -28,7 +28,7 @@ echo -e " ${WH}[${COLOR1}04${WH}]$NC ${COLOR1}• ${WH}Delete XRAY Trojan TCP Ac
 echo -e " ${WH}[${COLOR1}05${WH}]$NC ${COLOR1}• ${WH}Renew XRAY Trojan TCP Account\033[0m"
 echo -e " ${WH}[${COLOR1}06${WH}]$NC ${COLOR1}• ${WH}Check XRAY Trojan TCP Config\033[0m"
 
-echo -e " ${WH}[${COLOR1}00${WH}]$NC ${COLOR1}• Back To Menu\033[0m"
+echo -e " ${WH}[${COLOR1}00${WH}]$NC ${COLOR1}• Back To Main Menu\033[0m"
 echo ""
 echo -e " \033[1;37mPress [ Ctrl+C ] • To-Exit-Script\033[0m"
 echo ""
