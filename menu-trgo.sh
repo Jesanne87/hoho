@@ -19,7 +19,7 @@ echo -e "\e[36m╚============================================╝\033[0m
  [\033[1;36m•4 \033[0m]  Renew Trojan GO WS Account
  [\033[1;36m•5 \033[0m]  Check Trojan GO Config
  [\033[1;36m•6 \033[0m]  Change Port Trojan GO WS
- [\033[1;36m•7 \033[0m]  Back To Main Menu"
+ [\033[1;36m•7 \033[0m]  Back To Menu"
 echo ""
 echo -e " \033[1;37mPress [ Ctrl+C ] • To-Exit-Script\033[0m"
 echo ""
@@ -51,7 +51,7 @@ if [[ $(cat /opt/.ver) = $serverV ]] > /dev/null 2>&1; then
        menu
     elif [[ $x -eq 7 ]]; then
        clear
-       menu
+       menu-xray
     else
        clear
        menu-trgo
