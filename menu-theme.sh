@@ -169,14 +169,10 @@ echo -e " $COLOR1║ ${NC}                ${WH}• \e[1;33mJsJsPhantom${NC} @ 20
 echo -e " $COLOR1╚══════════════════════════════════════════════════════╝${NC}" 
 ;;
 00 | 0)
-clear
 menu-other
 ;;
 *)
-clear
-menu-theme
-;;
-esac
+sleep 2
 echo -e ""
-read -n 1 -s -r -p "  Press any key to back on Theme Panel"
-menu-theme 
+esac
+menu-theme
