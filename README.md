@@ -12,11 +12,11 @@
 
 
 ### Moded Script
-## Register IP (PM your username & IP):<a href="https://t.me/jsPhantom" target=”_blank”><img src="https://img.shields.io/static/v1?style=for-the-badge&logo=Telegram&label=Telegram&message=Click%20Here&color=blue"></a><br>
+## Register IP (PM your username & IP):<p> <a href="https://t.me/jsPhantom" target=”_blank”><img src="https://img.shields.io/static/v1?style=for-the-badge&logo=Telegram&label=Telegram&message=Click%20Here&color=blue"></a><br>
 ## Untuk Root Access <br>
         
  ```html
-wget https://raw.githubusercontent.com/annelyah23/VPS-access-root/main/root7.sh && bash root7.sh
+wget https://raw.githubusercontent.com/Jesanne87/Root-Access/main/rootpass.sh && chmod +x rootpass.sh && ./rootpass.sh
  ```
 
 ## Update OS Debian 10 
