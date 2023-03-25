@@ -37,6 +37,12 @@ sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.di
  <p align="center">
 <img src="https://github.com/Jesanne87/examples/blob/main/Untitled%20design.jpg?raw=true)?r=82s" width="850" alt="Ok"/></a></p>
 
+Just for fun script!! Friendly User Panel
+<p>
+Nice Appearance 
+<p>
+Recommended OS Debian 10!!!
+
 <p align="center">
 <img height=21 src="https://komarev.com/ghpvc/?username=Jesanne87">
 
