@@ -41,6 +41,16 @@ Nice Appearance
 <p>
 Recommended OS Debian 10!!!
 
+   >>> [INFORMASI XRAY]
+
+|  SERVICE  |  NETWORK PORT  |
+|---------- |--------|
+| Xray vmess websocket TLS & NON-TLS  | 443/80 |
+| Xray vless websocket TLS & NON-TLS  | 443/80 Custom path✅ |
+| Xray trojan websocket TLS & NON-TLS  | 443/80 |
+| Xray trojan tcp XTLS  | 443 |
+| Xray trojan tcp TLS  | 443 |
+
 <p align="center">
 <img height=21 src="https://komarev.com/ghpvc/?username=Jesanne87">
 
